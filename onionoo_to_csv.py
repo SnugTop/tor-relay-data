@@ -1,9 +1,10 @@
 
 #!/usr/bin/env python3
 """
-
+INFO:
 Onionoo: The consensus_weight you get in Onionoo is the same weight value assigned to relays in the daily/hourly consensus documents.
 Onionoo’s consensus_weight = this final, adjusted, authoritative value — not the raw self-advertised number.
+
 
 
 onionoo_to_csv.py
@@ -11,9 +12,14 @@ onionoo_to_csv.py
 Fetches per-relay consensus weight histories from Onionoo and writes a tidy CSV:
     date,fingerprint,advertised_bw
 
+Key options:
+  --window      one of: 1week | 1month | 3months | 6months | 1year (prefers 1year if available)
+  --sample-time HH:MM in UTC (e.g., 00:00). For each relay and calendar day, picks the sample closest to this time.
+  --out         output CSV path
+
 Examples:
-  python onionoo_to_csv.py --out daily_bw.csv                   # default 1year window if available
-  python onionoo_to_csv.py --out daily_bw.csv --window 3months
+  python3 onionoo_to_csv.py --out daily_bw.csv --window 1year --sample-time 00:00
+  python3 onionoo_to_csv.py --out daily_bw.csv --window 3months --sample-time 06:00
 
 Dependencies:
   - requests
@@ -24,7 +30,8 @@ import argparse
 import sys
 import time
 from pathlib import Path
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Tuple
+import datetime as dt
 
 import requests
 import pandas as pd
@@ -39,12 +46,15 @@ WINDOW_KEYS = ["1_year", "6_months", "3_months", "1_month", "1_week"]
 
 
 def get_json(params: Dict[str, Any]) -> Dict[str, Any]:
-    """GET with basic retries."""
     last_err = None
     for attempt in range(1, RETRIES + 1):
         try:
-            r = requests.get(BASE, params=params, timeout=TIMEOUT,
-                             headers={"User-Agent": "tor-metrics-research/1.0"})
+            r = requests.get(
+                BASE,
+                params=params,
+                timeout=TIMEOUT,
+                headers={"User-Agent": "tor-metrics-research/1.0"},
+            )
             r.raise_for_status()
             return r.json()
         except Exception as e:
@@ -60,7 +70,6 @@ def choose_history(obj: Dict[str, Any], preferred: Optional[str]) -> Optional[Di
     cw = obj.get("consensus_weight", {})
     if not cw:
         return None
-    # prefer requested window, else fall back to longest available
     if preferred and preferred in cw:
         return cw[preferred]
     for k in WINDOW_KEYS:
@@ -70,28 +79,27 @@ def choose_history(obj: Dict[str, Any], preferred: Optional[str]) -> Optional[Di
 
 
 def unpack_history(hist: Dict[str, Any]) -> pd.DataFrame:
-    """Expand Onionoo history into rows with absolute timestamps and values applied with 'factor'."""
+    """Expand Onionoo history to absolute timestamps, preserving time-of-day."""
     first = pd.to_datetime(hist["first"], utc=True)
     interval = pd.to_timedelta(int(hist.get("interval", 86400)), unit="s")
     factor = hist.get("factor", 1)
     vals = hist.get("values", [])
     if not isinstance(vals, list):
         vals = []
-    dates = [first + i * interval for i in range(len(vals))]
-    data = {
-        "date": pd.to_datetime(dates, utc=True).tz_convert("UTC").normalize(),
-        "value": [None if v is None else v * factor for v in vals],
-    }
-    return pd.DataFrame(data)
+    ts = [first + i * interval for i in range(len(vals))]
+    return pd.DataFrame(
+        {
+            "timestamp": pd.to_datetime(ts, utc=True),
+            "value": [None if v is None else v * factor for v in vals],
+        }
+    )
 
 
 def fetch_all(window: Optional[str]) -> pd.DataFrame:
-    """Page through all relays and collect consensus_weight history."""
     rows: List[pd.DataFrame] = []
     offset = 0
     while True:
-        params = {"limit": PAGE_SIZE, "offset": offset}
-        j = get_json(params)
+        j = get_json({"limit": PAGE_SIZE, "offset": offset})
         relays = j.get("relays", [])
         if not relays:
             break
@@ -112,13 +120,12 @@ def fetch_all(window: Optional[str]) -> pd.DataFrame:
         offset += PAGE_SIZE
 
     if not rows:
-        return pd.DataFrame(columns=["date", "fingerprint", "advertised_bw"])
+        return pd.DataFrame(columns=["timestamp", "fingerprint", "value"])
 
     out = pd.concat(rows, ignore_index=True)
-    out.rename(columns={"value": "advertised_bw"}, inplace=True)
-    out["date"] = pd.to_datetime(out["date"]).dt.tz_localize(None)  # drop tz
-    out = out[["date", "fingerprint", "advertised_bw"]].sort_values(["fingerprint", "date"])
-    return out
+    # Ensure ordering/types
+    out["timestamp"] = pd.to_datetime(out["timestamp"], utc=True)
+    return out.sort_values(["fingerprint", "timestamp"])
 
 
 def normalize_window(w: Optional[str]) -> Optional[str]:
@@ -134,24 +141,84 @@ def normalize_window(w: Optional[str]) -> Optional[str]:
     return mapping.get(w, None)
 
 
+def nearest_daily_sample(df: pd.DataFrame, hh: int, mm: int) -> pd.DataFrame:
+    """
+    For each relay and calendar date (UTC), pick the sample closest to HH:MM (UTC).
+    Returns rows with columns: date (date), fingerprint, advertised_bw, timestamp.
+    """
+    data = df.copy()
+    # calendar day in UTC (date objects)
+    data["date"] = data["timestamp"].dt.tz_convert("UTC").dt.date
+    target_time = dt.time(hour=hh, minute=mm)
+
+    def pick_closest(group: pd.DataFrame) -> pd.Series:
+        # the group's date (all identical)
+        day = group["date"].iloc[0]
+        # make a naive Timestamp, then tz-localize to UTC (this is the key fix)
+        target_ts = pd.Timestamp.combine(day, target_time).tz_localize("UTC")
+        # pick the row whose timestamp is closest to target_ts
+        deltas = (group["timestamp"] - target_ts).abs().dt.total_seconds()
+        idx = deltas.idxmin()
+        row = group.loc[idx]
+        return pd.Series(
+            {
+                "date": pd.to_datetime(day),                 # naive date at midnight (UTC day)
+                "fingerprint": row["fingerprint"],
+                "advertised_bw": row["value"],
+                "timestamp": row["timestamp"],               # actual Onionoo sample (tz-aware)
+            }
+        )
+
+    picked = (
+        data.groupby(["fingerprint", "date"], as_index=False, group_keys=False)
+            .apply(pick_closest)
+            .reset_index(drop=True)
+    )
+    # make 'date' column naive (no tz); keep timestamp with tz
+    picked["date"] = picked["date"].dt.tz_localize(None)
+    return picked[["date", "fingerprint", "advertised_bw", "timestamp"]]
+
+
 def main():
     parser = argparse.ArgumentParser(description="Export Onionoo consensus_weight histories to CSV.")
     parser.add_argument("--out", type=str, required=True, help="Output CSV path (e.g., daily_bw.csv).")
-    parser.add_argument("--window", type=str, default=None,
-                        choices=[None, "1week", "1month", "3months", "6months", "1year"],
-                        help="Preferred history window. Falls back to longest available if missing.")
+    parser.add_argument(
+        "--window",
+        type=str,
+        default=None,
+        choices=[None, "1week", "1month", "3months", "6months", "1year"],
+        help="Preferred history window. Falls back to the longest available if missing.",
+    )
+    parser.add_argument(
+        "--sample-time",
+        type=str,
+        default="00:00",
+        help="Target UTC time-of-day (HH:MM) to sample per day (nearest record is chosen). Default 00:00.",
+    )
     args = parser.parse_args()
 
     preferred = normalize_window(args.window)
-    df = fetch_all(preferred)
-    if df.empty:
+    raw = fetch_all(preferred)
+    if raw.empty:
         print("No data returned from Onionoo. Try a different window or check connectivity.", file=sys.stderr)
         sys.exit(2)
 
+    # Parse HH:MM
+    try:
+        hh, mm = map(int, args.sample_time.split(":"))
+        if not (0 <= hh < 24 and 0 <= mm < 60):
+            raise ValueError
+    except Exception:
+        print("Invalid --sample-time. Use HH:MM (e.g., 00:00, 06:30).", file=sys.stderr)
+        sys.exit(2)
+
+    daily = nearest_daily_sample(raw, hh=hh, mm=mm)
+
     out_path = Path(args.out).expanduser().resolve()
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(out_path, index=False)
-    print(f"Wrote {len(df):,} rows to {out_path}")
+    daily.to_csv(out_path, index=False)
+    print(f"Wrote {len(daily):,} rows to {out_path}")
+    print("Columns: date (UTC calendar day), fingerprint, advertised_bw (consensus_weight), timestamp (UTC actual sample)")
 
 
 if __name__ == "__main__":
