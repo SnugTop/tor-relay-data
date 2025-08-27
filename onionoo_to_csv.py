@@ -1,16 +1,15 @@
 
 #!/usr/bin/env python3
 """
+
 INFO:
-Onionoo: The consensus_weight you get in Onionoo is the same weight value assigned to relays in the daily/hourly consensus documents.
-Onionoo’s consensus_weight = this final, adjusted, authoritative value — not the raw self-advertised number.
-
-
-
-onionoo_to_csv.py
-
-Fetches per-relay consensus weight histories from Onionoo and writes a tidy CSV:
+- Onionoo: The consensus_weight you get in Onionoo is the same weight value assigned to relays in the daily/hourly consensus documents.
+- Onionoos consensus_weight = this final, adjusted, authoritative value — not the raw self-advertised number.
+- kilobytes per second (kB/s)
+- Some relays have an offset because Onionoo does not pull every relay at the same time so we use the closest sample to the requested time.
+- Fetches per-relay consensus weight histories from Onionoo and writes a tidy CSV:
     date,fingerprint,advertised_bw
+
 
 Key options:
   --window      one of: 1week | 1month | 3months | 6months | 1year (prefers 1year if available)
