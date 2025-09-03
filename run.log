@@ -1,0 +1,39 @@
+Starting pull: 2024-09-01 → 2024-09-07 @ hour 0 (fallbacks: [])
+[2024-09-01] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-09.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-01-00-00-00-consensus
+[2024-09-01] Parsed relays: 7,602 (in 5.3s)
+[2024-09-02] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-02-00-00-00-consensus
+[2024-09-02] Parsed relays: 7,625 (in 4.6s)
+[2024-09-03] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-03-00-00-00-consensus
+[2024-09-03] Parsed relays: 7,639 (in 3.4s)
+[2024-09-04] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-04-00-00-00-consensus
+[2024-09-04] Parsed relays: 7,722 (in 3.5s)
+[2024-09-05] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-05-00-00-00-consensus
+[2024-09-05] Parsed relays: 7,691 (in 4.9s)
+[2024-09-06] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-06-00-00-00-consensus
+[2024-09-06] Parsed relays: 7,677 (in 4.3s)
+[2024-09-07] Fetching consensus (hours tried: [0])...
+  ↳ Using month tar for 2024-09-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-07-00-00-00-consensus
+[2024-09-07] Parsed relays: 7,686 (in 5.0s)
+Writing CSV to daily_bw.csv (days=7, common_relays=7,101)
+Wrote panel for 7 day(s), common relays: 7101 → daily_bw.csv
