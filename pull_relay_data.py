@@ -77,7 +77,9 @@ def fetch_consensus(day: dt.date, hours, timeout=60):
     for hour in hours:
         try:
             log(f"  ↳ Using month tar for {day.isoformat()} @ {hour:02d}:00")
-            return fetch_from_month_tar(day, hour, timeout=timeout)
+            text = fetch_from_month_tar(day, hour, timeout=max(timeout, 60))
+            log(f"    ✓ Selected hour {hour:02d} for {day.isoformat()}")
+            return text, hour
         except Exception as e:
             last_err = e
             log(f"    ✗ Not in tar for hour {hour:02d}: {e}")
@@ -150,19 +152,20 @@ def build_panel(start_date, end_date, hours):
     for day in daterange(start_date, end_date):
         t0 = time.time()
         log(f"[{day.isoformat()}] Fetching consensus (hours tried: {hours})...")
-        text = fetch_consensus(day, hours)
+        text, used_hour = fetch_consensus(day, hours)
         mapping = parse_consensus(text)
         dt_s = time.time() - t0
         log(f"[{day.isoformat()}] Parsed relays: {len(mapping):,} (in {dt_s:.1f}s)")
-        per_day.append((day, mapping))
+        per_day.append((day, used_hour, mapping))
 
     # Intersection of relays present all days
     if not per_day:
         return [], set()
 
-    common = set(per_day[0][1].keys())
-    for _, m in per_day[1:]:
+    common = set(per_day[0][2].keys())
+    for _, _, m in per_day[1:]:
         common &= set(m.keys())
+
 
     return per_day, common
 
@@ -171,15 +174,14 @@ def write_csv(per_day, common_relays, out_path):
     # timestamp = ISO string at selected hour (only know the consensus hour from the URL pattern).
     with open(out_path, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["date", "fingerprint", "relay_bandwidth", "timestamp"])
-        for day, mapping in per_day:
-            # Best-effort timestamp: only know the date; hour varies by file fetched.
-            # Store date @ 00:00; if you want exact hour, you can return it from fetch_consensus.
-            stamp = dt.datetime.combine(day, dt.time(0, 0, 0)).isoformat()
+        w.writerow(["date", "hour", "fingerprint", "relay_bandwidth", "timestamp"])
+        for day, used_hour, mapping in per_day:
+            stamp = dt.datetime.combine(day, dt.time(used_hour, 0, 0)).isoformat()
             for fp in common_relays:
                 bw = mapping.get(fp)
                 if bw is not None:
-                    w.writerow([day.isoformat(), fp, bw, stamp])
+                    w.writerow([day.isoformat(), used_hour, fp, bw, stamp])
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="Build daily advertised bandwidth panel from Tor consensuses.")

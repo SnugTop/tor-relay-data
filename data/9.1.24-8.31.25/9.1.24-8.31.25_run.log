@@ -1,0 +1,2294 @@
+Starting pull: 2024-09-01 → 2025-08-31 @ hour 0 (fallbacks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])
+[2024-09-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-01 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-01
+[2024-09-01] Parsed relays: 7,602 (in 3.7s)
+[2024-09-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-02
+[2024-09-02] Parsed relays: 7,625 (in 4.7s)
+[2024-09-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-03
+[2024-09-03] Parsed relays: 7,639 (in 3.5s)
+[2024-09-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-04
+[2024-09-04] Parsed relays: 7,722 (in 3.6s)
+[2024-09-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-05
+[2024-09-05] Parsed relays: 7,691 (in 5.0s)
+[2024-09-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-06
+[2024-09-06] Parsed relays: 7,677 (in 4.4s)
+[2024-09-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-07
+[2024-09-07] Parsed relays: 7,686 (in 5.1s)
+[2024-09-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-08
+[2024-09-08] Parsed relays: 7,722 (in 4.8s)
+[2024-09-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-09
+[2024-09-09] Parsed relays: 7,747 (in 4.3s)
+[2024-09-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-10
+[2024-09-10] Parsed relays: 7,761 (in 4.5s)
+[2024-09-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-11
+[2024-09-11] Parsed relays: 7,753 (in 4.0s)
+[2024-09-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-12
+[2024-09-12] Parsed relays: 7,757 (in 3.2s)
+[2024-09-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-13
+[2024-09-13] Parsed relays: 7,748 (in 2.7s)
+[2024-09-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-14
+[2024-09-14] Parsed relays: 7,772 (in 4.5s)
+[2024-09-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-15
+[2024-09-15] Parsed relays: 7,789 (in 4.6s)
+[2024-09-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-16
+[2024-09-16] Parsed relays: 7,818 (in 3.7s)
+[2024-09-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-17
+[2024-09-17] Parsed relays: 7,940 (in 3.0s)
+[2024-09-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-18
+[2024-09-18] Parsed relays: 7,946 (in 3.3s)
+[2024-09-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-19
+[2024-09-19] Parsed relays: 7,954 (in 2.9s)
+[2024-09-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-20
+[2024-09-20] Parsed relays: 8,007 (in 3.4s)
+[2024-09-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-21
+[2024-09-21] Parsed relays: 7,999 (in 3.9s)
+[2024-09-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-22
+[2024-09-22] Parsed relays: 8,026 (in 5.1s)
+[2024-09-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-23
+[2024-09-23] Parsed relays: 8,029 (in 5.3s)
+[2024-09-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-24
+[2024-09-24] Parsed relays: 8,001 (in 4.2s)
+[2024-09-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-25
+[2024-09-25] Parsed relays: 8,010 (in 5.2s)
+[2024-09-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-26
+[2024-09-26] Parsed relays: 8,020 (in 3.3s)
+[2024-09-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-27
+[2024-09-27] Parsed relays: 8,025 (in 3.0s)
+[2024-09-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-28
+[2024-09-28] Parsed relays: 8,026 (in 4.1s)
+[2024-09-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-29
+[2024-09-29] Parsed relays: 8,022 (in 3.8s)
+[2024-09-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-09-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-09.tar.xz
+    ✓ Found in tar: 2024-09-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-09-30
+[2024-09-30] Parsed relays: 8,075 (in 5.0s)
+[2024-10-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-01 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 00: Consensus for 2024-10-01 00:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-01-00-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-01 @ 01:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 01: Consensus for 2024-10-01 01:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-01-01-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-01 @ 02:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 02: Consensus for 2024-10-01 02:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-01-02-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-01 @ 03:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 03: Consensus for 2024-10-01 03:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-01-03-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-01 @ 04:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-01-04-00-00-consensus
+    ✓ Selected hour 04 for 2024-10-01
+[2024-10-01] Parsed relays: 8,138 (in 14.9s)
+[2024-10-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-02
+[2024-10-02] Parsed relays: 8,131 (in 4.9s)
+[2024-10-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-03
+[2024-10-03] Parsed relays: 8,114 (in 3.7s)
+[2024-10-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-04
+[2024-10-04] Parsed relays: 8,137 (in 3.8s)
+[2024-10-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-05
+[2024-10-05] Parsed relays: 8,125 (in 5.1s)
+[2024-10-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 00: Consensus for 2024-10-06 00:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-00-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 01:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 01: Consensus for 2024-10-06 01:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-01-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 02:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 02: Consensus for 2024-10-06 02:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-02-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 03:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 03: Consensus for 2024-10-06 03:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-03-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 04:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 04: Consensus for 2024-10-06 04:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-04-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 05:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 05: Consensus for 2024-10-06 05:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-05-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 06:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 06: Consensus for 2024-10-06 06:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-06-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 07:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 07: Consensus for 2024-10-06 07:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-07-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 08:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 08: Consensus for 2024-10-06 08:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-08-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 09:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 09: Consensus for 2024-10-06 09:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-09-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 10:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 10: Consensus for 2024-10-06 10:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-10-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 11:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 11: Consensus for 2024-10-06 11:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-11-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 12:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 12: Consensus for 2024-10-06 12:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-12-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 13:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 13: Consensus for 2024-10-06 13:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-13-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 14:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✗ Not in tar for hour 14: Consensus for 2024-10-06 14:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2024-10.tar.xz. Tried patterns like 2024-10-06-14-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2024-10-06 @ 15:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-06-15-00-00-consensus
+    ✓ Selected hour 15 for 2024-10-06
+[2024-10-06] Parsed relays: 8,119 (in 46.0s)
+[2024-10-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-07
+[2024-10-07] Parsed relays: 8,106 (in 5.3s)
+[2024-10-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-08
+[2024-10-08] Parsed relays: 8,116 (in 5.0s)
+[2024-10-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-09
+[2024-10-09] Parsed relays: 8,097 (in 4.4s)
+[2024-10-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-10
+[2024-10-10] Parsed relays: 8,097 (in 4.5s)
+[2024-10-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-11
+[2024-10-11] Parsed relays: 8,068 (in 4.1s)
+[2024-10-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-12
+[2024-10-12] Parsed relays: 8,088 (in 3.2s)
+[2024-10-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-13
+[2024-10-13] Parsed relays: 8,093 (in 2.8s)
+[2024-10-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-14
+[2024-10-14] Parsed relays: 8,067 (in 4.6s)
+[2024-10-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-15
+[2024-10-15] Parsed relays: 8,115 (in 4.8s)
+[2024-10-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-16
+[2024-10-16] Parsed relays: 8,052 (in 3.8s)
+[2024-10-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-17
+[2024-10-17] Parsed relays: 8,078 (in 3.2s)
+[2024-10-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-18
+[2024-10-18] Parsed relays: 8,081 (in 3.5s)
+[2024-10-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-19
+[2024-10-19] Parsed relays: 8,064 (in 3.0s)
+[2024-10-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-20
+[2024-10-20] Parsed relays: 8,092 (in 3.5s)
+[2024-10-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-21
+[2024-10-21] Parsed relays: 8,080 (in 4.1s)
+[2024-10-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-22
+[2024-10-22] Parsed relays: 8,110 (in 5.2s)
+[2024-10-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-23
+[2024-10-23] Parsed relays: 8,091 (in 5.4s)
+[2024-10-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-24
+[2024-10-24] Parsed relays: 8,124 (in 4.3s)
+[2024-10-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-25
+[2024-10-25] Parsed relays: 8,131 (in 5.3s)
+[2024-10-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-26
+[2024-10-26] Parsed relays: 8,194 (in 3.4s)
+[2024-10-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-27
+[2024-10-27] Parsed relays: 8,168 (in 3.1s)
+[2024-10-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-28
+[2024-10-28] Parsed relays: 8,198 (in 4.3s)
+[2024-10-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-29
+[2024-10-29] Parsed relays: 8,177 (in 4.1s)
+[2024-10-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-30
+[2024-10-30] Parsed relays: 8,117 (in 5.0s)
+[2024-10-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-10-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-10.tar.xz
+    ✓ Found in tar: 2024-10-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-10-31
+[2024-10-31] Parsed relays: 8,158 (in 3.0s)
+[2024-11-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-01 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-01
+[2024-11-01] Parsed relays: 8,036 (in 3.8s)
+[2024-11-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-02
+[2024-11-02] Parsed relays: 8,141 (in 4.9s)
+[2024-11-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-03
+[2024-11-03] Parsed relays: 8,113 (in 3.5s)
+[2024-11-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-04
+[2024-11-04] Parsed relays: 7,980 (in 3.7s)
+[2024-11-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-05
+[2024-11-05] Parsed relays: 8,115 (in 5.3s)
+[2024-11-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-06
+[2024-11-06] Parsed relays: 7,863 (in 4.6s)
+[2024-11-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-07
+[2024-11-07] Parsed relays: 7,888 (in 5.5s)
+[2024-11-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-08
+[2024-11-08] Parsed relays: 7,914 (in 5.1s)
+[2024-11-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-09
+[2024-11-09] Parsed relays: 7,881 (in 4.4s)
+[2024-11-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-10
+[2024-11-10] Parsed relays: 7,921 (in 4.6s)
+[2024-11-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-11
+[2024-11-11] Parsed relays: 7,969 (in 4.1s)
+[2024-11-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-12
+[2024-11-12] Parsed relays: 7,969 (in 3.2s)
+[2024-11-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-13
+[2024-11-13] Parsed relays: 7,989 (in 2.8s)
+[2024-11-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-14
+[2024-11-14] Parsed relays: 8,008 (in 4.7s)
+[2024-11-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-15
+[2024-11-15] Parsed relays: 8,007 (in 4.8s)
+[2024-11-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-16
+[2024-11-16] Parsed relays: 7,992 (in 3.9s)
+[2024-11-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-17
+[2024-11-17] Parsed relays: 7,994 (in 3.1s)
+[2024-11-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-18
+[2024-11-18] Parsed relays: 7,920 (in 3.4s)
+[2024-11-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-19
+[2024-11-19] Parsed relays: 7,927 (in 3.0s)
+[2024-11-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-20
+[2024-11-20] Parsed relays: 7,930 (in 3.5s)
+[2024-11-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-21
+[2024-11-21] Parsed relays: 7,916 (in 4.1s)
+[2024-11-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-22
+[2024-11-22] Parsed relays: 7,866 (in 5.3s)
+[2024-11-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-23
+[2024-11-23] Parsed relays: 7,864 (in 5.7s)
+[2024-11-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-24
+[2024-11-24] Parsed relays: 7,885 (in 4.4s)
+[2024-11-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-25
+[2024-11-25] Parsed relays: 7,862 (in 5.6s)
+[2024-11-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-26
+[2024-11-26] Parsed relays: 7,903 (in 3.4s)
+[2024-11-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-27
+[2024-11-27] Parsed relays: 8,033 (in 3.2s)
+[2024-11-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-28
+[2024-11-28] Parsed relays: 7,971 (in 4.4s)
+[2024-11-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-29
+[2024-11-29] Parsed relays: 7,973 (in 4.1s)
+[2024-11-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-11-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-11.tar.xz
+    ✓ Found in tar: 2024-11-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-11-30
+[2024-11-30] Parsed relays: 8,033 (in 5.2s)
+[2024-12-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-01 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-01
+[2024-12-01] Parsed relays: 8,033 (in 4.1s)
+[2024-12-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-02
+[2024-12-02] Parsed relays: 7,928 (in 5.2s)
+[2024-12-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-03
+[2024-12-03] Parsed relays: 7,964 (in 3.8s)
+[2024-12-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-04
+[2024-12-04] Parsed relays: 7,943 (in 3.8s)
+[2024-12-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-05
+[2024-12-05] Parsed relays: 7,945 (in 5.3s)
+[2024-12-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-06
+[2024-12-06] Parsed relays: 7,937 (in 4.7s)
+[2024-12-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-07
+[2024-12-07] Parsed relays: 7,969 (in 5.5s)
+[2024-12-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-08
+[2024-12-08] Parsed relays: 8,002 (in 5.3s)
+[2024-12-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-09
+[2024-12-09] Parsed relays: 7,990 (in 4.6s)
+[2024-12-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-10
+[2024-12-10] Parsed relays: 8,007 (in 4.8s)
+[2024-12-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-11
+[2024-12-11] Parsed relays: 8,007 (in 4.4s)
+[2024-12-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-12
+[2024-12-12] Parsed relays: 7,900 (in 3.5s)
+[2024-12-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-13
+[2024-12-13] Parsed relays: 7,912 (in 3.0s)
+[2024-12-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-14
+[2024-12-14] Parsed relays: 7,901 (in 4.9s)
+[2024-12-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-15
+[2024-12-15] Parsed relays: 7,909 (in 4.9s)
+[2024-12-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-16
+[2024-12-16] Parsed relays: 7,947 (in 4.0s)
+[2024-12-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-17
+[2024-12-17] Parsed relays: 7,926 (in 3.3s)
+[2024-12-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-18
+[2024-12-18] Parsed relays: 7,917 (in 3.6s)
+[2024-12-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-19
+[2024-12-19] Parsed relays: 7,894 (in 3.1s)
+[2024-12-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-20
+[2024-12-20] Parsed relays: 7,956 (in 3.6s)
+[2024-12-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-21
+[2024-12-21] Parsed relays: 7,960 (in 4.2s)
+[2024-12-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-22
+[2024-12-22] Parsed relays: 7,969 (in 5.3s)
+[2024-12-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-23
+[2024-12-23] Parsed relays: 7,985 (in 5.7s)
+[2024-12-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-24
+[2024-12-24] Parsed relays: 7,974 (in 4.5s)
+[2024-12-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-25
+[2024-12-25] Parsed relays: 8,014 (in 5.6s)
+[2024-12-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-26
+[2024-12-26] Parsed relays: 7,922 (in 3.5s)
+[2024-12-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-27
+[2024-12-27] Parsed relays: 7,919 (in 3.2s)
+[2024-12-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-28
+[2024-12-28] Parsed relays: 7,925 (in 4.4s)
+[2024-12-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-29
+[2024-12-29] Parsed relays: 7,913 (in 4.1s)
+[2024-12-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-30
+[2024-12-30] Parsed relays: 7,922 (in 5.1s)
+[2024-12-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2024-12-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2024-12.tar.xz
+    ✓ Found in tar: 2024-12-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2024-12-31
+[2024-12-31] Parsed relays: 7,997 (in 3.0s)
+[2025-01-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-01.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-01
+[2025-01-01] Parsed relays: 8,009 (in 6.5s)
+[2025-01-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-02
+[2025-01-02] Parsed relays: 8,043 (in 5.0s)
+[2025-01-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-03
+[2025-01-03] Parsed relays: 7,998 (in 3.7s)
+[2025-01-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-04
+[2025-01-04] Parsed relays: 8,033 (in 3.8s)
+[2025-01-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-05
+[2025-01-05] Parsed relays: 8,022 (in 5.3s)
+[2025-01-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-06
+[2025-01-06] Parsed relays: 7,991 (in 4.6s)
+[2025-01-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-07
+[2025-01-07] Parsed relays: 8,004 (in 5.4s)
+[2025-01-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-08
+[2025-01-08] Parsed relays: 8,022 (in 5.2s)
+[2025-01-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-09
+[2025-01-09] Parsed relays: 7,987 (in 4.6s)
+[2025-01-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-10
+[2025-01-10] Parsed relays: 7,967 (in 4.8s)
+[2025-01-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-11
+[2025-01-11] Parsed relays: 7,996 (in 4.3s)
+[2025-01-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-12
+[2025-01-12] Parsed relays: 7,979 (in 3.4s)
+[2025-01-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-13
+[2025-01-13] Parsed relays: 7,971 (in 3.0s)
+[2025-01-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-14
+[2025-01-14] Parsed relays: 7,999 (in 4.8s)
+[2025-01-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-15
+[2025-01-15] Parsed relays: 7,964 (in 4.9s)
+[2025-01-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-16
+[2025-01-16] Parsed relays: 7,959 (in 4.0s)
+[2025-01-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-17
+[2025-01-17] Parsed relays: 7,947 (in 3.3s)
+[2025-01-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-18
+[2025-01-18] Parsed relays: 7,929 (in 3.6s)
+[2025-01-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-19
+[2025-01-19] Parsed relays: 7,917 (in 3.2s)
+[2025-01-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-20
+[2025-01-20] Parsed relays: 7,941 (in 3.8s)
+[2025-01-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-21
+[2025-01-21] Parsed relays: 7,956 (in 4.3s)
+[2025-01-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-22
+[2025-01-22] Parsed relays: 7,950 (in 5.4s)
+[2025-01-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-23
+[2025-01-23] Parsed relays: 7,877 (in 5.6s)
+[2025-01-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-24
+[2025-01-24] Parsed relays: 7,896 (in 4.5s)
+[2025-01-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-25
+[2025-01-25] Parsed relays: 7,901 (in 5.5s)
+[2025-01-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-26
+[2025-01-26] Parsed relays: 7,884 (in 3.4s)
+[2025-01-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-27
+[2025-01-27] Parsed relays: 7,882 (in 3.2s)
+[2025-01-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-28
+[2025-01-28] Parsed relays: 7,868 (in 4.4s)
+[2025-01-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-29
+[2025-01-29] Parsed relays: 7,838 (in 4.1s)
+[2025-01-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-30
+[2025-01-30] Parsed relays: 7,835 (in 5.2s)
+[2025-01-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-01-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-01.tar.xz
+    ✓ Found in tar: 2025-01-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-01-31
+[2025-01-31] Parsed relays: 7,893 (in 3.1s)
+[2025-02-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-02.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-01
+[2025-02-01] Parsed relays: 7,892 (in 5.5s)
+[2025-02-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-02
+[2025-02-02] Parsed relays: 7,942 (in 4.7s)
+[2025-02-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-03
+[2025-02-03] Parsed relays: 7,950 (in 3.5s)
+[2025-02-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-04
+[2025-02-04] Parsed relays: 7,970 (in 3.5s)
+[2025-02-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-05
+[2025-02-05] Parsed relays: 8,005 (in 4.9s)
+[2025-02-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-06
+[2025-02-06] Parsed relays: 7,950 (in 4.3s)
+[2025-02-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-07
+[2025-02-07] Parsed relays: 8,021 (in 5.0s)
+[2025-02-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-08
+[2025-02-08] Parsed relays: 8,005 (in 4.8s)
+[2025-02-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-09
+[2025-02-09] Parsed relays: 8,024 (in 4.3s)
+[2025-02-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-10
+[2025-02-10] Parsed relays: 8,089 (in 4.5s)
+[2025-02-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-11
+[2025-02-11] Parsed relays: 8,078 (in 3.9s)
+[2025-02-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-12
+[2025-02-12] Parsed relays: 8,083 (in 3.1s)
+[2025-02-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-13
+[2025-02-13] Parsed relays: 8,080 (in 2.8s)
+[2025-02-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-14
+[2025-02-14] Parsed relays: 8,136 (in 4.5s)
+[2025-02-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-15
+[2025-02-15] Parsed relays: 8,128 (in 4.6s)
+[2025-02-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-16
+[2025-02-16] Parsed relays: 8,155 (in 3.8s)
+[2025-02-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-17
+[2025-02-17] Parsed relays: 8,155 (in 3.0s)
+[2025-02-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-18
+[2025-02-18] Parsed relays: 8,199 (in 3.4s)
+[2025-02-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-19
+[2025-02-19] Parsed relays: 8,198 (in 2.9s)
+[2025-02-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-20
+[2025-02-20] Parsed relays: 8,268 (in 3.4s)
+[2025-02-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-21
+[2025-02-21] Parsed relays: 8,265 (in 3.9s)
+[2025-02-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-22
+[2025-02-22] Parsed relays: 8,345 (in 5.0s)
+[2025-02-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-23
+[2025-02-23] Parsed relays: 8,352 (in 5.3s)
+[2025-02-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-24
+[2025-02-24] Parsed relays: 8,423 (in 4.1s)
+[2025-02-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-25
+[2025-02-25] Parsed relays: 8,399 (in 5.2s)
+[2025-02-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-26
+[2025-02-26] Parsed relays: 8,496 (in 3.3s)
+[2025-02-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-27
+[2025-02-27] Parsed relays: 8,505 (in 2.9s)
+[2025-02-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-02-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-02.tar.xz
+    ✓ Found in tar: 2025-02-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-02-28
+[2025-02-28] Parsed relays: 8,539 (in 4.1s)
+[2025-03-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-03.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-01
+[2025-03-01] Parsed relays: 8,587 (in 6.3s)
+[2025-03-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-02
+[2025-03-02] Parsed relays: 8,651 (in 5.8s)
+[2025-03-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-03
+[2025-03-03] Parsed relays: 8,681 (in 4.3s)
+[2025-03-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-04
+[2025-03-04] Parsed relays: 8,781 (in 4.3s)
+[2025-03-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-05
+[2025-03-05] Parsed relays: 8,665 (in 6.0s)
+[2025-03-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-06
+[2025-03-06] Parsed relays: 8,829 (in 5.3s)
+[2025-03-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-07
+[2025-03-07] Parsed relays: 8,772 (in 6.1s)
+[2025-03-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-08
+[2025-03-08] Parsed relays: 8,826 (in 5.8s)
+[2025-03-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-09
+[2025-03-09] Parsed relays: 8,900 (in 5.1s)
+[2025-03-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-10
+[2025-03-10] Parsed relays: 8,949 (in 5.4s)
+[2025-03-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-11
+[2025-03-11] Parsed relays: 9,001 (in 4.9s)
+[2025-03-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-12
+[2025-03-12] Parsed relays: 9,003 (in 3.9s)
+[2025-03-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-13
+[2025-03-13] Parsed relays: 9,003 (in 3.3s)
+[2025-03-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-14
+[2025-03-14] Parsed relays: 9,002 (in 5.5s)
+[2025-03-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-15
+[2025-03-15] Parsed relays: 9,008 (in 5.6s)
+[2025-03-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-16
+[2025-03-16] Parsed relays: 9,013 (in 4.5s)
+[2025-03-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-17
+[2025-03-17] Parsed relays: 9,024 (in 3.8s)
+[2025-03-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-18
+[2025-03-18] Parsed relays: 9,073 (in 4.0s)
+[2025-03-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-19
+[2025-03-19] Parsed relays: 9,079 (in 3.6s)
+[2025-03-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-20
+[2025-03-20] Parsed relays: 9,137 (in 4.2s)
+[2025-03-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-21
+[2025-03-21] Parsed relays: 9,090 (in 4.8s)
+[2025-03-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-22
+[2025-03-22] Parsed relays: 9,119 (in 6.2s)
+[2025-03-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-23
+[2025-03-23] Parsed relays: 9,103 (in 6.5s)
+[2025-03-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-24
+[2025-03-24] Parsed relays: 9,030 (in 5.1s)
+[2025-03-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-25
+[2025-03-25] Parsed relays: 9,044 (in 6.4s)
+[2025-03-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-26
+[2025-03-26] Parsed relays: 9,040 (in 4.0s)
+[2025-03-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-27
+[2025-03-27] Parsed relays: 9,053 (in 3.6s)
+[2025-03-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-28
+[2025-03-28] Parsed relays: 9,026 (in 5.0s)
+[2025-03-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-29
+[2025-03-29] Parsed relays: 9,036 (in 4.7s)
+[2025-03-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-30
+[2025-03-30] Parsed relays: 9,040 (in 5.7s)
+[2025-03-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-03-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-03.tar.xz
+    ✓ Found in tar: 2025-03-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-03-31
+[2025-03-31] Parsed relays: 9,050 (in 3.4s)
+[2025-04-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-01
+[2025-04-01] Parsed relays: 9,057 (in 5.6s)
+[2025-04-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-02
+[2025-04-02] Parsed relays: 9,151 (in 4.9s)
+[2025-04-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-03
+[2025-04-03] Parsed relays: 9,092 (in 3.7s)
+[2025-04-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-04
+[2025-04-04] Parsed relays: 8,807 (in 3.7s)
+[2025-04-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-05
+[2025-04-05] Parsed relays: 8,814 (in 5.2s)
+[2025-04-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-06
+[2025-04-06] Parsed relays: 8,790 (in 4.5s)
+[2025-04-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-07
+[2025-04-07] Parsed relays: 8,786 (in 5.4s)
+[2025-04-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-08
+[2025-04-08] Parsed relays: 8,779 (in 5.1s)
+[2025-04-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-09
+[2025-04-09] Parsed relays: 8,837 (in 4.4s)
+[2025-04-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-10
+[2025-04-10] Parsed relays: 8,816 (in 4.7s)
+[2025-04-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-11
+[2025-04-11] Parsed relays: 8,730 (in 4.1s)
+[2025-04-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-12
+[2025-04-12] Parsed relays: 8,745 (in 3.3s)
+[2025-04-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-13
+[2025-04-13] Parsed relays: 8,774 (in 2.9s)
+[2025-04-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-14
+[2025-04-14] Parsed relays: 8,820 (in 4.7s)
+[2025-04-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-15
+[2025-04-15] Parsed relays: 8,856 (in 4.8s)
+[2025-04-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-16
+[2025-04-16] Parsed relays: 8,837 (in 3.9s)
+[2025-04-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-17
+[2025-04-17] Parsed relays: 8,816 (in 3.2s)
+[2025-04-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-18
+[2025-04-18] Parsed relays: 8,869 (in 3.4s)
+[2025-04-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-19
+[2025-04-19] Parsed relays: 8,709 (in 3.0s)
+[2025-04-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-20
+[2025-04-20] Parsed relays: 8,781 (in 3.5s)
+[2025-04-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 00: Consensus for 2025-04-21 00:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-21-00-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-21 @ 01:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 01: Consensus for 2025-04-21 01:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-21-01-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-21 @ 02:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 02: Consensus for 2025-04-21 02:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-21-02-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-21 @ 03:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 03: Consensus for 2025-04-21 03:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-21-03-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-21 @ 04:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-21-04-00-00-consensus
+    ✓ Selected hour 04 for 2025-04-21
+[2025-04-21] Parsed relays: 8,736 (in 15.3s)
+[2025-04-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-22
+[2025-04-22] Parsed relays: 8,698 (in 5.3s)
+[2025-04-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-23
+[2025-04-23] Parsed relays: 8,721 (in 5.5s)
+[2025-04-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 00: Consensus for 2025-04-24 00:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-24-00-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-24 @ 01:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-24-01-00-00-consensus
+    ✓ Selected hour 01 for 2025-04-24
+[2025-04-24] Parsed relays: 8,802 (in 7.1s)
+[2025-04-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 00: Consensus for 2025-04-25 00:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-00-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 01:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 01: Consensus for 2025-04-25 01:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-01-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 02:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 02: Consensus for 2025-04-25 02:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-02-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 03:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 03: Consensus for 2025-04-25 03:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-03-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 04:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 04: Consensus for 2025-04-25 04:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-04-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 05:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 05: Consensus for 2025-04-25 05:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-05-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 06:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✗ Not in tar for hour 06: Consensus for 2025-04-25 06:00 not found in https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-04.tar.xz. Tried patterns like 2025-04-25-06-00-00[-00]-consensus[.xz|.bz2].
+  ↳ Using month tar for 2025-04-25 @ 07:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-25-07-00-00-consensus
+    ✓ Selected hour 07 for 2025-04-25
+[2025-04-25] Parsed relays: 8,668 (in 25.0s)
+[2025-04-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-26
+[2025-04-26] Parsed relays: 8,686 (in 3.4s)
+[2025-04-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-27
+[2025-04-27] Parsed relays: 8,611 (in 3.1s)
+[2025-04-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-28
+[2025-04-28] Parsed relays: 8,635 (in 4.2s)
+[2025-04-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-29
+[2025-04-29] Parsed relays: 8,644 (in 4.0s)
+[2025-04-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-04-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-04.tar.xz
+    ✓ Found in tar: 2025-04-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-04-30
+[2025-04-30] Parsed relays: 8,647 (in 5.0s)
+[2025-05-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-05.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-01
+[2025-05-01] Parsed relays: 8,644 (in 6.0s)
+[2025-05-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-02
+[2025-05-02] Parsed relays: 8,746 (in 5.4s)
+[2025-05-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-03
+[2025-05-03] Parsed relays: 8,718 (in 4.0s)
+[2025-05-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-04
+[2025-05-04] Parsed relays: 8,676 (in 4.3s)
+[2025-05-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-05
+[2025-05-05] Parsed relays: 8,704 (in 5.9s)
+[2025-05-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-06
+[2025-05-06] Parsed relays: 8,738 (in 5.0s)
+[2025-05-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-07
+[2025-05-07] Parsed relays: 8,739 (in 5.9s)
+[2025-05-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-08
+[2025-05-08] Parsed relays: 8,678 (in 5.6s)
+[2025-05-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-09
+[2025-05-09] Parsed relays: 8,591 (in 4.9s)
+[2025-05-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-10
+[2025-05-10] Parsed relays: 8,570 (in 5.1s)
+[2025-05-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-11
+[2025-05-11] Parsed relays: 8,662 (in 4.7s)
+[2025-05-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-12
+[2025-05-12] Parsed relays: 8,665 (in 3.6s)
+[2025-05-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-13
+[2025-05-13] Parsed relays: 8,659 (in 3.2s)
+[2025-05-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-14
+[2025-05-14] Parsed relays: 8,622 (in 5.2s)
+[2025-05-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-15
+[2025-05-15] Parsed relays: 8,633 (in 5.3s)
+[2025-05-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-16
+[2025-05-16] Parsed relays: 8,698 (in 4.3s)
+[2025-05-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-17
+[2025-05-17] Parsed relays: 8,696 (in 3.5s)
+[2025-05-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-18
+[2025-05-18] Parsed relays: 8,550 (in 3.9s)
+[2025-05-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-19
+[2025-05-19] Parsed relays: 8,550 (in 3.4s)
+[2025-05-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-20
+[2025-05-20] Parsed relays: 8,600 (in 3.9s)
+[2025-05-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-21
+[2025-05-21] Parsed relays: 8,548 (in 4.5s)
+[2025-05-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-22
+[2025-05-22] Parsed relays: 8,433 (in 5.8s)
+[2025-05-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-23
+[2025-05-23] Parsed relays: 8,404 (in 6.1s)
+[2025-05-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-24
+[2025-05-24] Parsed relays: 8,372 (in 4.9s)
+[2025-05-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-25
+[2025-05-25] Parsed relays: 8,399 (in 6.0s)
+[2025-05-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-26
+[2025-05-26] Parsed relays: 8,414 (in 3.7s)
+[2025-05-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-27
+[2025-05-27] Parsed relays: 8,458 (in 3.5s)
+[2025-05-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-28
+[2025-05-28] Parsed relays: 8,482 (in 4.7s)
+[2025-05-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-29
+[2025-05-29] Parsed relays: 8,435 (in 4.4s)
+[2025-05-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-30
+[2025-05-30] Parsed relays: 8,648 (in 5.6s)
+[2025-05-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-05-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-05.tar.xz
+    ✓ Found in tar: 2025-05-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-05-31
+[2025-05-31] Parsed relays: 8,627 (in 3.4s)
+[2025-06-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-06.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-01
+[2025-06-01] Parsed relays: 8,539 (in 6.5s)
+[2025-06-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-02
+[2025-06-02] Parsed relays: 8,625 (in 5.8s)
+[2025-06-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-03
+[2025-06-03] Parsed relays: 8,600 (in 4.2s)
+[2025-06-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-04
+[2025-06-04] Parsed relays: 8,544 (in 4.3s)
+[2025-06-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-05
+[2025-06-05] Parsed relays: 8,585 (in 6.0s)
+[2025-06-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-06
+[2025-06-06] Parsed relays: 8,591 (in 5.3s)
+[2025-06-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-07
+[2025-06-07] Parsed relays: 8,584 (in 6.3s)
+[2025-06-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-08
+[2025-06-08] Parsed relays: 8,700 (in 5.9s)
+[2025-06-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-09
+[2025-06-09] Parsed relays: 8,684 (in 5.1s)
+[2025-06-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-10
+[2025-06-10] Parsed relays: 8,572 (in 5.4s)
+[2025-06-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-11
+[2025-06-11] Parsed relays: 8,462 (in 4.8s)
+[2025-06-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-12
+[2025-06-12] Parsed relays: 8,498 (in 3.7s)
+[2025-06-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-13
+[2025-06-13] Parsed relays: 8,529 (in 3.3s)
+[2025-06-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-14
+[2025-06-14] Parsed relays: 8,599 (in 5.7s)
+[2025-06-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-15
+[2025-06-15] Parsed relays: 8,592 (in 5.7s)
+[2025-06-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-16
+[2025-06-16] Parsed relays: 8,591 (in 4.5s)
+[2025-06-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-17
+[2025-06-17] Parsed relays: 8,667 (in 3.7s)
+[2025-06-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-18
+[2025-06-18] Parsed relays: 8,624 (in 4.1s)
+[2025-06-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-19
+[2025-06-19] Parsed relays: 8,615 (in 3.5s)
+[2025-06-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-20
+[2025-06-20] Parsed relays: 8,696 (in 4.2s)
+[2025-06-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-21
+[2025-06-21] Parsed relays: 8,628 (in 4.8s)
+[2025-06-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-22
+[2025-06-22] Parsed relays: 8,711 (in 6.1s)
+[2025-06-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-23
+[2025-06-23] Parsed relays: 8,746 (in 6.8s)
+[2025-06-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-24
+[2025-06-24] Parsed relays: 8,738 (in 5.3s)
+[2025-06-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-25
+[2025-06-25] Parsed relays: 8,702 (in 6.5s)
+[2025-06-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-26
+[2025-06-26] Parsed relays: 8,698 (in 4.1s)
+[2025-06-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-27
+[2025-06-27] Parsed relays: 8,701 (in 3.6s)
+[2025-06-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-28
+[2025-06-28] Parsed relays: 8,609 (in 5.1s)
+[2025-06-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-29
+[2025-06-29] Parsed relays: 8,563 (in 4.6s)
+[2025-06-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-06-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-06.tar.xz
+    ✓ Found in tar: 2025-06-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-06-30
+[2025-06-30] Parsed relays: 8,543 (in 5.9s)
+[2025-07-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-07.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-01
+[2025-07-01] Parsed relays: 8,661 (in 6.8s)
+[2025-07-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-02
+[2025-07-02] Parsed relays: 8,687 (in 6.0s)
+[2025-07-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-03
+[2025-07-03] Parsed relays: 8,646 (in 4.5s)
+[2025-07-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-04
+[2025-07-04] Parsed relays: 8,529 (in 4.6s)
+[2025-07-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-05
+[2025-07-05] Parsed relays: 8,591 (in 6.3s)
+[2025-07-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-06
+[2025-07-06] Parsed relays: 8,581 (in 5.6s)
+[2025-07-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-07
+[2025-07-07] Parsed relays: 8,595 (in 6.5s)
+[2025-07-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-08
+[2025-07-08] Parsed relays: 8,617 (in 6.2s)
+[2025-07-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-09
+[2025-07-09] Parsed relays: 8,706 (in 5.5s)
+[2025-07-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-10
+[2025-07-10] Parsed relays: 8,692 (in 5.7s)
+[2025-07-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-11
+[2025-07-11] Parsed relays: 8,715 (in 5.1s)
+[2025-07-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-12
+[2025-07-12] Parsed relays: 8,660 (in 4.0s)
+[2025-07-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-13
+[2025-07-13] Parsed relays: 8,736 (in 3.5s)
+[2025-07-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-14
+[2025-07-14] Parsed relays: 8,759 (in 5.8s)
+[2025-07-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-15
+[2025-07-15] Parsed relays: 8,819 (in 5.9s)
+[2025-07-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-16
+[2025-07-16] Parsed relays: 8,815 (in 4.7s)
+[2025-07-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-17
+[2025-07-17] Parsed relays: 8,759 (in 3.9s)
+[2025-07-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-18
+[2025-07-18] Parsed relays: 8,707 (in 4.3s)
+[2025-07-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-19
+[2025-07-19] Parsed relays: 8,957 (in 3.7s)
+[2025-07-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-20
+[2025-07-20] Parsed relays: 8,908 (in 4.5s)
+[2025-07-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-21
+[2025-07-21] Parsed relays: 8,858 (in 5.1s)
+[2025-07-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-22
+[2025-07-22] Parsed relays: 8,859 (in 6.4s)
+[2025-07-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-23
+[2025-07-23] Parsed relays: 8,823 (in 6.8s)
+[2025-07-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-24
+[2025-07-24] Parsed relays: 8,795 (in 5.4s)
+[2025-07-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-25
+[2025-07-25] Parsed relays: 8,800 (in 6.6s)
+[2025-07-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-26
+[2025-07-26] Parsed relays: 8,892 (in 4.1s)
+[2025-07-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-27
+[2025-07-27] Parsed relays: 8,824 (in 3.9s)
+[2025-07-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-28
+[2025-07-28] Parsed relays: 8,905 (in 5.2s)
+[2025-07-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-29
+[2025-07-29] Parsed relays: 8,812 (in 4.9s)
+[2025-07-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-30
+[2025-07-30] Parsed relays: 8,786 (in 6.1s)
+[2025-07-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-07-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-07.tar.xz
+    ✓ Found in tar: 2025-07-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-07-31
+[2025-07-31] Parsed relays: 8,765 (in 3.6s)
+[2025-08-01] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-01 @ 00:00
+    • Downloading tar: https://collector.torproject.org/archive/relay-descriptors/consensuses/consensuses-2025-08.tar.xz
+    • Saved cache: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-01-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-01
+[2025-08-01] Parsed relays: 8,819 (in 7.0s)
+[2025-08-02] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-02 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-02-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-02
+[2025-08-02] Parsed relays: 8,916 (in 6.2s)
+[2025-08-03] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-03 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-03-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-03
+[2025-08-03] Parsed relays: 8,911 (in 4.6s)
+[2025-08-04] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-04 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-04-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-04
+[2025-08-04] Parsed relays: 8,957 (in 4.7s)
+[2025-08-05] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-05 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-05-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-05
+[2025-08-05] Parsed relays: 8,998 (in 6.5s)
+[2025-08-06] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-06 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-06-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-06
+[2025-08-06] Parsed relays: 9,027 (in 5.7s)
+[2025-08-07] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-07 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-07-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-07
+[2025-08-07] Parsed relays: 9,004 (in 6.7s)
+[2025-08-08] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-08 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-08-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-08
+[2025-08-08] Parsed relays: 9,121 (in 6.4s)
+[2025-08-09] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-09 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-09-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-09
+[2025-08-09] Parsed relays: 9,135 (in 5.6s)
+[2025-08-10] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-10 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-10-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-10
+[2025-08-10] Parsed relays: 9,130 (in 5.8s)
+[2025-08-11] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-11 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-11-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-11
+[2025-08-11] Parsed relays: 9,170 (in 5.2s)
+[2025-08-12] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-12 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-12-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-12
+[2025-08-12] Parsed relays: 9,243 (in 4.1s)
+[2025-08-13] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-13 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-13-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-13
+[2025-08-13] Parsed relays: 9,113 (in 3.6s)
+[2025-08-14] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-14 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-14-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-14
+[2025-08-14] Parsed relays: 9,152 (in 5.9s)
+[2025-08-15] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-15 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-15-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-15
+[2025-08-15] Parsed relays: 9,068 (in 6.0s)
+[2025-08-16] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-16 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-16-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-16
+[2025-08-16] Parsed relays: 9,099 (in 4.9s)
+[2025-08-17] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-17 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-17-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-17
+[2025-08-17] Parsed relays: 9,129 (in 4.0s)
+[2025-08-18] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-18 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-18-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-18
+[2025-08-18] Parsed relays: 9,124 (in 4.3s)
+[2025-08-19] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-19 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-19-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-19
+[2025-08-19] Parsed relays: 9,177 (in 3.8s)
+[2025-08-20] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-20 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-20-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-20
+[2025-08-20] Parsed relays: 9,128 (in 4.4s)
+[2025-08-21] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-21 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-21-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-21
+[2025-08-21] Parsed relays: 9,179 (in 5.1s)
+[2025-08-22] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-22 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-22-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-22
+[2025-08-22] Parsed relays: 8,916 (in 6.6s)
+[2025-08-23] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-23 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-23-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-23
+[2025-08-23] Parsed relays: 8,895 (in 6.9s)
+[2025-08-24] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-24 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-24-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-24
+[2025-08-24] Parsed relays: 8,833 (in 5.5s)
+[2025-08-25] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-25 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-25-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-25
+[2025-08-25] Parsed relays: 8,853 (in 6.8s)
+[2025-08-26] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-26 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-26-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-26
+[2025-08-26] Parsed relays: 8,888 (in 4.2s)
+[2025-08-27] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-27 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-27-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-27
+[2025-08-27] Parsed relays: 8,930 (in 3.9s)
+[2025-08-28] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-28 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-28-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-28
+[2025-08-28] Parsed relays: 8,947 (in 5.4s)
+[2025-08-29] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-29 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-29-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-29
+[2025-08-29] Parsed relays: 8,942 (in 5.0s)
+[2025-08-30] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-30 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-30-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-30
+[2025-08-30] Parsed relays: 8,918 (in 6.3s)
+[2025-08-31] Fetching consensus (hours tried: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23])...
+  ↳ Using month tar for 2025-08-31 @ 00:00
+    • Using cached tar: .cache/tor-consensuses/consensuses-2025-08.tar.xz
+    ✓ Found in tar: 2025-08-31-00-00-00-consensus
+    ✓ Selected hour 00 for 2025-08-31
+[2025-08-31] Parsed relays: 8,928 (in 3.7s)
+Writing CSV to 1yr_daily_bw.csv (days=365, common_relays=1,962)
+Wrote panel for 365 day(s), common relays: 1962 → 1yr_daily_bw.csv
