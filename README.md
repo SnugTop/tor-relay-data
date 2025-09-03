@@ -18,7 +18,7 @@ The ultimate goal is to generate graphs showing how relay stability evolves over
 
 2. **Computation**  
    - Apply a 7-day sliding window.  
-   - Compute Coefficient of Variation (CoV) for each relay across that window.  
+   - Compute Coefficient of Variation (CoV) and Standard Deviation for each relay across that window.  
 
 3. **Visualization**  
    - X-axis: Week number (or raw timestamps).  
@@ -57,7 +57,18 @@ python -m pip install -r requirements.txt
 
 How to run:
 ```shell
-python pull_relay_data.py --start 2024-09-01 --end 2024-09-07 --hour 0 --out daily_bw.csv
+❯ python3 pull_relay_data.py \                                                                                     
+  --start 2024-09-01 --end 2025-08-31 \
+  --hour 0 $(for h in $(seq 1 23); do echo --hour-fallback $h; done) \
+  --out 1yr_daily_bw.csv 2>&1 | tee run.log
 ```
 
+
+## Data Validation 
+
+`validate_data.py` will 
+
+```shell
+python3 validate_data.py 1yr_9.1.24_8.31.25_daily_bw.csv | tee validation_9.1.24-8.31.25_run.log  
+```
 

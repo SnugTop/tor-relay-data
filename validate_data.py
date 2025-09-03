@@ -15,8 +15,7 @@ def parse_args():
     return p.parse_args()
 
 def daterange(d0, d1):
-    days = []
-    d = d0
+    days, d = [], d0
     while d <= d1:
         days.append(d)
         d += dt.timedelta(days=1)
@@ -65,7 +64,7 @@ def main():
     if dup:
         die(f"Found {dup} duplicate (date,fingerprint) rows")
 
-    # Infer date range and check continuity (no gaps)
+    # Date coverage: no gaps
     days_present = sorted(set(df["date"].tolist()))
     d0, d1 = min(days_present), max(days_present)
     expected_days = daterange(d0, d1)
@@ -73,7 +72,7 @@ def main():
         missing_days = [d for d in expected_days if d not in days_present]
         die(f"Date coverage has gaps: missing {len(missing_days)} day(s); first few: {', '.join(map(str, missing_days[:10]))}")
 
-    # Per-day counts must match, and the fingerprint set must be identical each day
+    # Fingerprint set must be identical every day
     by_day = {d: set(g["fingerprint"]) for d, g in df.groupby("date")}
     sizes = {d: len(s) for d, s in by_day.items()}
     if len(set(sizes.values())) != 1:
@@ -93,12 +92,37 @@ def main():
     if huge > 0:
         print(f"NOTE: {huge} rows have very large relay_bandwidth (>1e9)", file=sys.stderr)
 
-    # Final consistency check
+    # Row count matches days × common
     n_days = len(expected_days)
     n_common = len(common)
     n_rows = len(df)
     if n_rows != n_days * n_common:
         die(f"Row count mismatch: rows={n_rows} but days×common={n_days*n_common}")
+
+    # Hour diagnostics (if present)
+    if "hour" in df.columns:
+        df["hour"] = pd.to_numeric(df["hour"], errors="coerce").astype("Int64")
+        if df["hour"].isna().any():
+            die(f"'hour' has {int(df['hour'].isna().sum())} non-numeric cells")
+
+        per_day_hour = df.groupby("date")["hour"].nunique()
+        days_multi_hours = int((per_day_hour > 1).sum())
+        hour_counts = df.drop_duplicates(["date","hour"])["hour"].value_counts().sort_index()
+
+        print("\nHour usage across days:")
+        for h, c in hour_counts.items():
+            print(f"  - {int(h):02d}:00 → {c} day(s)")
+
+        if days_multi_hours:
+            print(f"WARNING: {days_multi_hours} day(s) have multiple different hours in the CSV")
+
+        off_zero = df.groupby("date")["hour"].first().loc[lambda s: s != 0]
+        if len(off_zero):
+            print(f"Days not at 00:00 ({len(off_zero)}):")
+            for d, h in off_zero.items():
+                print(f"  {d} @ {int(h):02d}:00")
+    else:
+        print("\nNOTE: No 'hour' column found; cannot report hour variation.")
 
     # OK summary
     print("VALIDATION Summary")

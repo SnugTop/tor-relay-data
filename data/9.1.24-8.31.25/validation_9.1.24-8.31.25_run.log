@@ -1,0 +1,21 @@
+
+Hour usage across days:
+  - 00:00 → 360 day(s)
+  - 01:00 → 1 day(s)
+  - 04:00 → 2 day(s)
+  - 07:00 → 1 day(s)
+  - 15:00 → 1 day(s)
+Days not at 00:00 (5):
+  2024-10-01 @ 04:00
+  2024-10-06 @ 15:00
+  2025-04-21 @ 04:00
+  2025-04-24 @ 01:00
+  2025-04-25 @ 07:00
+VALIDATION Summary
+------------------
+Passed all checks: No duplicate fingerprints, missing days, all days aligned.
+- File: 1yr_9.1.24_8.31.25_daily_bw.csv
+- SHA256: 9ca79373d95b7669ca05015002bb10c483e6fc7d87ba03cccc295bce5d09e675
+- Dates: 2024-09-01 → 2025-08-31 (inclusive) = 365 days
+- Common relays: 1,962
+- Total rows: 716,130 (days × common = 365 × 1962)
