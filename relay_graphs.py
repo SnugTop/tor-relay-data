@@ -1,10 +1,21 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+import sys
 
 # === CONFIG ===
 CSV_PATH = "relay_bandwidths.csv"
 WINDOW_DAYS = 7
+
+# === CHECK FOR OUTPUT FOLDER ARGUMENT ===
+FOLDER = None
+if len(sys.argv) > 1:
+    FOLDER = sys.argv[1]
+    os.makedirs(FOLDER, exist_ok=True)
+    print(f"📁 Output folder set to: {FOLDER}")
+else:
+    print("⚙️  No folder specified — graphs will be displayed interactively instead of saved.")
 
 # === LOAD DATA ===
 df = pd.read_csv(CSV_PATH, parse_dates=["date"])
@@ -21,7 +32,7 @@ threshold_10 = first_day_bw["relay_bandwidth"].quantile(0.90)
 top5_relays = set(first_day_bw[first_day_bw["relay_bandwidth"] >= threshold_5]["fingerprint"])
 top10_relays = set(first_day_bw[first_day_bw["relay_bandwidth"] >= threshold_10]["fingerprint"])
 
-# === FUNCTION TO COMPUTE STATS ===
+# === FUNCTION TO COMPUTE ROLLING STATS ===
 def compute_rolling_stats(df_subset):
     stats_list = []
     for fp, group in df_subset.groupby("fingerprint"):
@@ -49,8 +60,8 @@ def aggregate_stats(all_stats):
     agg = agg.reset_index()
     return agg
 
-# === FUNCTION TO PLOT ===
-def plot_stat(agg, stat, title, color):
+# === FUNCTION TO PLOT OR SAVE ===
+def plot_graph(agg, stat, title, color, filename=None):
     plt.figure(figsize=(10, 6))
     plt.plot(agg["date"], agg[f"{stat}_median"], color=color, label=f"Median {stat.upper()} (7-day rolling)")
     plt.fill_between(
@@ -67,35 +78,35 @@ def plot_stat(agg, stat, title, color):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
 
-# === ALL RELAYS ===
-print("Computing statistics for all relays...")
-all_stats = compute_rolling_stats(daily_bw)
-agg_all = aggregate_stats(all_stats)
+    if FOLDER:  # save to folder if specified
+        save_path = os.path.join(FOLDER, f"{filename}.png")
+        plt.savefig(save_path, dpi=300)
+        plt.close()
+        print(f"💾 Saved {save_path}")
+    else:
+        plt.show()
 
-plot_stat(agg_all, "median_bw", "Median Relay Bandwidth (All Relays)", "blue")
-plot_stat(agg_all, "std_bw", "Median Std Dev of Relay Bandwidth (All Relays)", "orange")
-plot_stat(agg_all, "cv_bw", "Median Coefficient of Variation (All Relays)", "green")
+# === ANALYSIS PIPELINE ===
+def process_and_plot(label, df_subset, file_prefix):
+    print(f"🔹 Computing statistics for {label}...")
+    all_stats = compute_rolling_stats(df_subset)
+    agg = aggregate_stats(all_stats)
 
-# === TOP 5% RELAYS ===
-print("Computing statistics for top 5% relays...")
+    plot_graph(agg, "median_bw", f"Median Relay Bandwidth ({label})", "blue", f"{file_prefix}_bandwidth")
+    plot_graph(agg, "std_bw", f"Median Std Dev of Relay Bandwidth ({label})", "orange", f"{file_prefix}_stddev")
+    plot_graph(agg, "cv_bw", f"Median Coefficient of Variation ({label})", "green", f"{file_prefix}_cv")
+
+# === RUN ALL GROUPS ===
+process_and_plot("All Relays", daily_bw, "all_relays")
+
 top5_bw = daily_bw[daily_bw["fingerprint"].isin(top5_relays)]
-all_stats_top5 = compute_rolling_stats(top5_bw)
-agg_top5 = aggregate_stats(all_stats_top5)
+process_and_plot("Top 5% Relays", top5_bw, "top5")
 
-plot_stat(agg_top5, "median_bw", "Median Relay Bandwidth (Top 5% Relays)", "blue")
-plot_stat(agg_top5, "std_bw", "Median Std Dev of Relay Bandwidth (Top 5% Relays)", "orange")
-plot_stat(agg_top5, "cv_bw", "Median Coefficient of Variation (Top 5% Relays)", "green")
-
-# === TOP 10% RELAYS ===
-print("Computing statistics for top 10% relays...")
 top10_bw = daily_bw[daily_bw["fingerprint"].isin(top10_relays)]
-all_stats_top10 = compute_rolling_stats(top10_bw)
-agg_top10 = aggregate_stats(all_stats_top10)
+process_and_plot("Top 10% Relays", top10_bw, "top10")
 
-plot_stat(agg_top10, "median_bw", "Median Relay Bandwidth (Top 10% Relays)", "blue")
-plot_stat(agg_top10, "std_bw", "Median Std Dev of Relay Bandwidth (Top 10% Relays)", "orange")
-plot_stat(agg_top10, "cv_bw", "Median Coefficient of Variation (Top 10% Relays)", "green")
-
-print("✅ Done.")
+if FOLDER:
+    print(f"\n✅ All graphs saved in folder: {FOLDER}")
+else:
+    print("\n✅ All graphs displayed interactively.")
