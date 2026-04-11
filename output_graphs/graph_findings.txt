@@ -1,0 +1,232 @@
+GRAPH FINDINGS & DATA VERIFICATION
+tor-relay-data | Dataset: 2025-04-10 to 2026-04-09
+Date: 2026-04-10
+================================================================================
+
+DATASET SUMMARY
+---------------
+  Rows collected    : 3,278,039
+  Days covered      : 358 of 365 (7 missing due to archive lag)
+  Unique relays     : 26,399 total across the year
+  Relays per day    : ~9,000–9,500 (typical single-day snapshot)
+  Zero-bw rows      : 4,118 (~0.1% of data)
+  Time alignment    : 100% of rows within 1 hour of midnight UTC
+
+
+================================================================================
+DATA VERIFICATION
+================================================================================
+
+Before interpreting the graphs, several checks were run to confirm the data
+is correct and consistent with publicly known facts about the Tor network.
+
+------------------------------------------------------------------------
+CHECK 1: Relay Count Per Day
+------------------------------------------------------------------------
+We know the Tor network has roughly 7,000–10,000 active relays at any
+given moment (this has grown over recent years). We sampled several dates:
+
+  2025-04-10 : 8,816 relays
+  2025-07-01 : 8,661 relays
+  2025-10-01 : 8,992 relays
+  2026-01-01 : 9,476 relays
+
+  Year average : ~9,157 relays/day
+  Min (single day) : 8,372  on 2025-05-24
+  Max (single day) : 10,052 on 2025-11-21
+
+Result: PASS. These counts are consistent with the Tor Project's publicly
+reported network size for this period.
+
+------------------------------------------------------------------------
+CHECK 2: Total Advertised Bandwidth vs. Tor Metrics
+------------------------------------------------------------------------
+The Tor Project publishes aggregate bandwidth figures on metrics.torproject.org.
+We computed total advertised bandwidth across all relays per day and converted
+from kB/s to Gbit/s for comparison:
+
+  2025-04-10 : 1,245 Gbit/s
+  2025-07-01 : 1,220 Gbit/s
+  2025-10-01 : 1,408 Gbit/s
+  2026-01-01 : 1,668 Gbit/s
+  Year average: ~1,451 Gbit/s
+
+Result: PASS. These figures align with what Tor Metrics reports for advertised
+network capacity in this period (~1.2–1.7 Tbit/s range).
+
+------------------------------------------------------------------------
+CHECK 3: Relay Bandwidth Distribution Sanity Check
+------------------------------------------------------------------------
+  Median relay bandwidth : ~10,022 kB/s  (~10 MB/s)
+  Mean relay bandwidth   : ~19,807 kB/s  (~20 MB/s)
+
+The mean being roughly double the median confirms the network is skewed by
+a small number of very high-capacity relays. This is consistent with the
+well-known structure of the Tor network, where a handful of high-bandwidth
+relays carry a disproportionate share of traffic.
+
+Result: PASS. Distribution shape is as expected.
+
+------------------------------------------------------------------------
+CHECK 4: 26,399 Unique Relays — Is That Too Many?
+------------------------------------------------------------------------
+The 26,399 figure is not the number of relays active at once. It is the
+total number of distinct relay fingerprints that appeared in at least one
+daily snapshot across the full year. With ~9,000 relays active on any
+given day and relays constantly joining and leaving the network, seeing
+~26,000 unique relays over 365 days is reasonable and expected.
+
+Result: PASS. This reflects normal network churn, not a data error.
+
+
+================================================================================
+GRAPH FINDINGS
+================================================================================
+
+All graphs use a 7-day rolling window. The solid line is the median value
+across all relays in that group. The shaded band covers the 10th–90th
+percentile range, showing how spread out behavior is across relays.
+
+Relay groups are determined by each relay's median bandwidth over the full
+year. Top 5% threshold: ≥64,000 kB/s. Top 10% threshold: ≥47,000 kB/s.
+
+------------------------------------------------------------------------
+ALL RELAYS — BANDWIDTH (all_relays_bandwidth.png)
+------------------------------------------------------------------------
+The median relay offered approximately 10,000 kB/s (~10 MB/s) throughout
+the year, with very little movement in the median line. This flatness
+suggests the typical relay's capacity is remarkably stable over time.
+
+The shaded band is extremely wide (roughly 0 to 60,000–70,000 kB/s),
+reflecting the enormous diversity in the Tor relay ecosystem. Some relays
+offer almost nothing; a few offer enormous capacity. The median sits low
+because most relays are small — the high-capacity outliers pull the mean
+up but do not affect the median.
+
+Notable: There is a visible uptick in the upper percentile band between
+October 2025 and January 2026, suggesting some high-capacity relays
+joined or significantly increased their capacity during this period.
+
+------------------------------------------------------------------------
+ALL RELAYS — STD DEV (all_relays_stddev.png)
+------------------------------------------------------------------------
+The median standard deviation sits around 700–800 kB/s for most of the
+year, meaning the typical relay's bandwidth fluctuates by less than 1 MB/s
+week-to-week in absolute terms. For a relay offering 10 MB/s, this is a
+small variation.
+
+The shaded band shows that some relays have much higher absolute fluctuation
+(up to ~7,000 kB/s at the 90th percentile), but these are outliers.
+
+Two spikes are visible:
+  - September 2025: median std dev briefly reaches ~900 kB/s, with the
+    90th percentile spiking to ~7,500 kB/s. This is the same event that
+    appears across all graphs (see note below).
+  - January 2026: a smaller secondary spike in the upper percentile band.
+
+------------------------------------------------------------------------
+ALL RELAYS — CV (all_relays_cv.png)  *** PRIMARY GRAPH ***
+------------------------------------------------------------------------
+This is the most important graph for the project's goal.
+
+The median CV sits at approximately 0.05 (5%) for most of the year. This
+means the typical relay's bandwidth fluctuates by only about 5% of its
+average value over any given 7-day window — an extremely stable network.
+
+The shaded band (10th–90th percentile) ranges from near 0 up to ~0.20,
+meaning most relays fall somewhere between essentially no variation and
+20% variation. A small number of relays are much more volatile.
+
+The most notable feature is the spike in September 2025, where the median
+CV briefly reached ~0.35 (35% variation). This spike affects all relay
+groups simultaneously, confirming it is a network-wide event rather than
+isolated to a few relays.
+
+------------------------------------------------------------------------
+TOP 5% RELAYS — BANDWIDTH (top5_bandwidth.png)
+------------------------------------------------------------------------
+The top 5% of relays (≥64,000 kB/s median) offered between roughly 75,000
+and 100,000 kB/s over the year. There is a clear upward trend from April
+2025 (~80,000 kB/s) peaking around October–November 2025 (~100,000 kB/s),
+followed by a modest decline heading into early 2026.
+
+The shaded band is wide but structured — the top and bottom of the band
+move together, suggesting the whole group trends similarly. The dip at the
+start of the dataset (April 2025) likely reflects that these relays were
+still ramping up, or that the first few days of the rolling window have
+fewer data points.
+
+------------------------------------------------------------------------
+TOP 5% RELAYS — STD DEV (top5_stddev.png)
+------------------------------------------------------------------------
+Absolute fluctuation for the top 5% is much higher than the all-relay
+median (~5,000 kB/s vs ~700 kB/s). This is expected — relays with more
+bandwidth have larger absolute swings even if proportionally stable.
+
+The September 2025 spike is more pronounced here, with the median briefly
+reaching ~15,000 kB/s and the 90th percentile spiking to ~27,000 kB/s.
+This suggests the September event disproportionately affected larger relays.
+
+------------------------------------------------------------------------
+TOP 5% RELAYS — CV (top5_cv.png)
+------------------------------------------------------------------------
+Despite having much larger absolute fluctuations, the top 5% relays have
+a median CV of ~0.05 — the same as the overall network. Larger relays are
+proportionally just as stable as average relays.
+
+The shaded band is noticeably narrower than the all-relays CV graph,
+meaning the top 5% are more homogeneous in their stability behavior.
+High-capacity relays tend to be run more consistently (likely by operators
+with more infrastructure and resources).
+
+The September 2025 spike reaches ~0.15 for the median (higher than the
+all-relay spike of ~0.35 in absolute terms on the median, but note the
+y-axes differ slightly). The spike is sharp and recovers within 2–3 weeks.
+
+------------------------------------------------------------------------
+TOP 10% RELAYS — BANDWIDTH / STD DEV / CV (top10_*.png)
+------------------------------------------------------------------------
+The top 10% (≥47,000 kB/s) results sit between the all-relay and top 5%
+figures, as expected. The bandwidth trend mirrors the top 5% but at lower
+absolute values (~55,000–85,000 kB/s). Std dev is similarly intermediate.
+
+The CV for the top 10% is nearly identical to the top 5% — both sit at
+~0.05 median with similar band widths. The top 10% shows the same September
+2025 spike and the same recovery pattern. This confirms the behavior of
+high-capacity relays is consistent regardless of exactly where you draw
+the threshold.
+
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. THE TOR NETWORK IS STABLE.
+   The median CV of ~0.05 (5%) held consistently for most of the year
+   across all relay groups. The typical relay does not fluctuate much.
+
+2. HIGH-CAPACITY RELAYS ARE NOT MORE OR LESS STABLE THAN AVERAGE.
+   Top 5% and top 10% relays have the same median CV as all relays. They
+   just carry more traffic and have larger absolute swings.
+
+3. THE SEPTEMBER 2025 EVENT IS THE MOST SIGNIFICANT ANOMALY.
+   A clear spike appears simultaneously in CV, std dev, and bandwidth graphs
+   across all three relay groups in September 2025. The median CV spiked to
+   ~0.35 briefly. This is worth investigating further — possible causes
+   include a major Tor software release, a directory authority change, a
+   large relay or group of relays dropping off the network, or an external
+   network event. Cross-referencing with Tor release history and Tor Metrics
+   is recommended.
+
+4. NETWORK CAPACITY GREW DURING THE PERIOD.
+   Total advertised bandwidth increased from ~1,245 Gbit/s in April 2025 to
+   ~1,668 Gbit/s by January 2026 — a ~34% increase in under a year. The
+   number of relays also grew from ~8,800 to ~9,500 per day.
+
+5. MOST OF THE 26,399 UNIQUE RELAYS ARE TRANSIENT.
+   With ~9,000 active on any given day but 26,399 seen over the year, roughly
+   two-thirds of relays that appeared during the year were not persistent.
+   The 80% presence filter in relay_graphs.py ensures the analysis focuses
+   on relays with meaningful, consistent participation.
+
+================================================================================

@@ -1,0 +1,189 @@
+SESSION CHANGES LOG
+tor-relay-data | Branch: concerns
+Date: 2026-04-10
+================================================================================
+
+OVERVIEW
+--------
+This session addressed several bugs and analytical issues in the existing
+codebase, fixed a broken data collection pipeline, pulled a fresh year of
+relay data, and produced a full set of analysis graphs. Changes are listed
+in the order they were made.
+
+
+--------------------------------------------------------------------------------
+1. CREATED BRANCH: concerns
+--------------------------------------------------------------------------------
+All changes in this session were made on a new branch called "concerns" to keep
+them isolated from main until testing and review are complete.
+
+
+--------------------------------------------------------------------------------
+2. FIXED: Column name mismatch in relay_graphs.py
+--------------------------------------------------------------------------------
+Problem:
+  relay_graphs.py expected a column called "relay_bandwidth" and also sorted
+  by a column called "hour". Neither of these columns are produced by the data
+  collection scripts, which output "advertised_bw" and no hour column. This
+  caused the script to crash silently or produce wrong results on any raw CSV
+  from the collector.
+
+Fix:
+  Added normalization logic at load time:
+    - If "relay_bandwidth" is missing but "advertised_bw" is present, rename it.
+    - If "hour" is missing but "timestamp" is present, derive hour from timestamp.
+    - If neither timestamp nor hour is present, default hour to 0.
+
+  This makes relay_graphs.py compatible with both raw collector output and any
+  previously processed CSVs regardless of column naming.
+
+
+--------------------------------------------------------------------------------
+3. FIXED: Top relay classification used only day 1
+--------------------------------------------------------------------------------
+Problem:
+  relay_graphs.py identified "top 5%" and "top 10%" relays by their bandwidth
+  on the very first day of the dataset. A relay that happened to be high on
+  day 1 but mediocre for the rest of the year would be permanently classified
+  as a top relay, and vice versa.
+
+Fix:
+  Top relay thresholds are now computed using each relay's median bandwidth
+  across the entire dataset. This is a more stable and representative measure
+  of a relay's true capacity tier.
+
+
+--------------------------------------------------------------------------------
+4. ADDED: Minimum presence filter (80% threshold)
+--------------------------------------------------------------------------------
+Problem:
+  Previously the codebase used --require-all-days in data-check.py, which
+  drops any relay that is missing even a single day. Over a year with 365 days,
+  this introduces severe survivorship bias — only perfectly consistent relays
+  survive, which is not representative of the network as a whole.
+
+Fix:
+  Added MIN_PRESENCE_FRAC = 0.80 to relay_graphs.py. Relays must appear on
+  at least 80% of days in the dataset to be included. At 358 days, this
+  requires a relay to appear on at least 287 days. This retains relays that
+  had brief outages without keeping relays that are essentially transient.
+
+  The threshold is relative (80% of whatever days are in the dataset), so it
+  scales automatically when different date ranges are used.
+
+
+--------------------------------------------------------------------------------
+5. FIXED: Percentile bands widened and made safe
+--------------------------------------------------------------------------------
+Problem (analytical):
+  The shaded band on each graph showed the 25th–75th percentile (IQR). This
+  is a relatively narrow window that understates how spread out relay behavior
+  actually is.
+
+Fix:
+  Changed to 10th–90th percentile bands, which give a better picture of the
+  full range of relay behavior.
+
+Problem (technical):
+  The original aggregate_stats() function used anonymous lambda functions
+  inside groupby().agg(), which caused two issues:
+    a) Column names were generated as "<lambda_0>" and "<lambda_1>", which
+       are fragile and broke in newer pandas versions.
+    b) The lambdas called np.percentile() on arrays that could be all-NaN
+       (during the first 6 days before the 7-day rolling window fills),
+       causing an IndexError crash.
+
+Fix:
+  Replaced lambdas with named helper functions _p10() and _p90() that use
+  np.nanpercentile() and guard against empty arrays. Column names in the
+  aggregated DataFrame are now stable and predictable (_p10, _p90).
+  Updated plot_graph() to reference the new column names.
+
+
+--------------------------------------------------------------------------------
+6. ADDED: CSV path as command-line argument to relay_graphs.py
+--------------------------------------------------------------------------------
+Problem:
+  relay_graphs.py had CSV_PATH hardcoded at the top of the file. To use a
+  different dataset you had to edit the source file every time, which is error
+  prone and messy.
+
+Fix:
+  The script now takes the CSV path as the first positional argument:
+
+    python3 relay_graphs.py <csv_path> [output_folder]
+
+  The output folder remains optional (graphs display interactively if omitted).
+  A usage message is printed if no arguments are provided.
+
+
+--------------------------------------------------------------------------------
+7. FIXED: dump_consensus_panel.py wrote 0 rows (wrong member path format)
+--------------------------------------------------------------------------------
+Problem:
+  Running dump_consensus_panel.py produced "Wrote 0 rows across 0 day(s)".
+  The script downloads monthly tarballs from CollecTor and then looks for
+  consensus files inside them. The script assumed member names like:
+
+    2025-04-13-00-00-00-consensus
+
+  But the actual structure inside the tarballs is:
+
+    consensuses-2025-04/13/2025-04-13-02-00-00-consensus
+
+  So every lookup failed silently, no data was extracted, and nothing was
+  written to the output CSV.
+
+Fix:
+  Updated two locations in dump_consensus_panel.py:
+
+  1. list_members_for_day() — used when iterating all hours:
+     Old: prefix = f"{day:%Y-%m-%d}-"
+     New: prefix = f"consensuses-{day:%Y-%m}/{day.day:02d}/{day:%Y-%m-%d}-"
+
+  2. name_for() inside iter_consensuses_fixed_hour() — used when looking up
+     a specific hour:
+     Old: f"{d:%Y-%m-%d}-{h:02d}-00-00-consensus"
+     New: f"consensuses-{d:%Y-%m}/{d.day:02d}/{d:%Y-%m-%d}-{h:02d}-00-00-consensus"
+
+  After this fix, a test run over 3 days (2025-04-01 to 2025-04-03) produced
+  27,300 rows as expected.
+
+
+--------------------------------------------------------------------------------
+8. PULLED FRESH DATA
+--------------------------------------------------------------------------------
+After fixing the collector, a full year of relay data was pulled:
+
+  Date range : 2025-04-10 to 2026-04-09
+  Mode       : fixed-hour, hour 0 UTC, fallback ±2 hours
+  Output     : data/4.10.25-4.9.26/1yr_daily_bw.csv
+  Rows       : 3,278,039
+  Days       : 358 (7 days missing due to CollecTor archive lag on recent dates)
+
+
+--------------------------------------------------------------------------------
+9. UPDATED README.md
+--------------------------------------------------------------------------------
+The previous README referenced scripts that no longer exist (pull_relay_data.py,
+validate_data.py) and was missing documentation for relay_graphs.py entirely.
+
+The new README covers:
+  - Project purpose and goals
+  - Full project structure
+  - Environment setup
+  - Complete workflow: collect → validate → graph
+  - All flags for all three scripts with descriptions
+  - What to look for in validation output
+  - All 9 output graphs explained
+  - How to interpret CV values and graph patterns
+  - Data source explanation
+
+
+================================================================================
+FILES CHANGED
+================================================================================
+  relay_graphs.py                        — fixes 2, 3, 4, 5, 6
+  Archive/code/dump_consensus_panel.py   — fix 7
+  README.md                              — rewritten (change 9)
+================================================================================
