@@ -1,0 +1,150 @@
+SEPTEMBER 2025 NETWORK EVENT — ANALYSIS
+tor-relay-data | Dataset: 2025-04-10 to 2026-04-09 (strict intersection)
+Date: 2026-04-10
+================================================================================
+
+OVERVIEW
+--------
+Every graph in this analysis shows a significant spike in bandwidth variability
+during September 2025. This document summarizes what the data reveals about
+the event. The root cause has not been confirmed — cross-referencing with
+Tor Project release notes and Tor Metrics is recommended for further context.
+
+
+================================================================================
+TIMELINE
+================================================================================
+
+  Pre-event baseline (August 2025):
+    Median CV: ~0.040–0.042  (very stable, slightly below the year average)
+
+  Phase 1 — Mild onset (September 8, 2025):
+    CV rose from ~0.037 to ~0.049
+    Gradual, not a sharp break. Suggests something began changing on or
+    just before September 8 that affected relay bandwidth incrementally.
+
+  Phase 2 — Sharp spike (September 20, 2025):
+    CV jumped from ~0.057 to ~0.085 within a single day.
+    Continued rising to a peak of 0.101 on September 25.
+    This is the sharpest single-week movement in the entire dataset.
+
+  Peak: September 25, 2025
+    Median CV: 0.101  (roughly 2.5× the normal baseline of ~0.040)
+
+  Recovery: September 29–30, 2025
+    CV fell back to ~0.048 within 4 days of the peak.
+    Full recovery to baseline (~0.040) by mid-October.
+
+  Post-event baseline (November 2025):
+    Median CV: ~0.042  (identical to pre-event — no permanent change)
+
+
+================================================================================
+WHAT THE DATA SHOWS
+================================================================================
+
+1. TWO DISTINCT PHASES
+   The event was not a single shock. There was a mild precursor starting
+   September 8 (CV ~0.049) followed by a much sharper escalation on
+   September 20. This two-phase structure suggests either two separate
+   causes, or a single cause that had a delayed second-order effect.
+
+2. BROADLY DISTRIBUTED ACROSS RELAYS
+   On the peak day (September 25):
+     - 1,092 of 2,153 relays (51%) had CV > 0.10
+     - 434 of 2,153 relays (20%) had CV > 0.20
+
+   The event affected the majority of the persistent relay set — this is
+   not a handful of outliers skewing the aggregate. It was a network-wide
+   phenomenon.
+
+3. SMALL RELAYS WERE MORE AFFECTED
+   Relays with CV > 0.20 during the peak had a median bandwidth of
+   ~1,986 kB/s. Relays that remained stable had a median of ~14,714 kB/s.
+   Smaller relays experienced proportionally more disruption than large ones.
+
+4. BANDWIDTH WENT BOTH UP AND DOWN SIMULTANEOUSLY
+   Comparing the week before the spike (Sep 1–7) to the peak week (Sep 20–26):
+     - 1,025 relays increased bandwidth
+     - 1,096 relays decreased bandwidth
+     - Median change: -6 kB/s (nearly neutral in aggregate)
+     - Mean change:  +233 kB/s (skewed by a few large gainers)
+
+   This is important: the spike was not caused by the network uniformly
+   gaining or losing capacity. Relays were moving in opposite directions
+   at the same time, which is what drives CV up without necessarily changing
+   the median bandwidth line much. This rules out a simple "big relay went
+   offline" explanation.
+
+5. FULL RECOVERY WITH NO PERMANENT EFFECT
+   The post-event baseline (November 2025 onward) is identical to the
+   pre-event baseline (~0.040–0.042). Whatever caused the disruption
+   resolved completely and left no lasting change in network behavior.
+
+
+================================================================================
+POSSIBLE EXPLANATIONS
+================================================================================
+
+Based solely on the data characteristics above — two phases, broad impact,
+small relays more affected, bidirectional bandwidth changes, full recovery —
+the most likely categories of explanation are:
+
+  A) Tor software release with a bandwidth-related change
+     A new version of Tor that changed how relays report or measure bandwidth
+     could cause a temporary period of adjustment while relays upgrade
+     at different times. Staggered upgrades would produce bidirectional
+     movement (upgraded relays change behavior, non-upgraded stay the same).
+     This is consistent with the two-phase structure.
+
+  B) Directory authority behavior change
+     The Tor directory authorities assign consensus weights to relays. A
+     change in how they measure or cap bandwidth could shift values across
+     the network simultaneously. This would explain the broad impact.
+
+  C) External network pressure
+     A period of unusual traffic load or an attempt to stress the network
+     could cause relays to fluctuate. However, the complete recovery with
+     no baseline shift makes a sustained external cause less likely.
+
+  D) Measurement artifact
+     A change in how CollecTor records or publishes consensus data is
+     unlikely given the event was confirmed across two independent collection
+     methods (dump_consensus_panel.py and pull_relay_data.py).
+
+
+================================================================================
+WHAT TO DO NEXT
+================================================================================
+
+To identify the root cause, cross-reference with:
+
+  1. Tor Project blog: https://blog.torproject.org
+     Look for posts from September 2025 about releases or network changes.
+
+  2. Tor release changelog: https://gitweb.torproject.org/tor.git/tree/ChangeLog
+     Check for releases around September 8 and September 20, 2025.
+
+  3. Tor Metrics bandwidth graph: https://metrics.torproject.org/bandwidth.html
+     Compare the total advertised bandwidth curve for September 2025 against
+     our findings.
+
+  4. Tor status page / network-health mailing list
+     Any incident reports filed around this period.
+
+================================================================================
+CONCLUSION
+================================================================================
+
+The September 2025 event is real, confirmed across two independent datasets,
+and represents the single largest disruption to relay bandwidth stability in
+the April 2025 – April 2026 period studied. It affected over half of all
+persistent relays, was bidirectional (not a simple capacity drop), and
+resolved completely within 3–4 weeks with no lasting effect on the network.
+
+The two-phase structure and the disproportionate impact on smaller relays are
+the most diagnostic features for identifying the root cause. A Tor software
+release with a bandwidth-related behavioral change remains the most likely
+explanation pending external verification.
+
+================================================================================

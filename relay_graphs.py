@@ -5,13 +5,20 @@ import os
 import sys
 
 # === CONFIG ===
-CSV_PATH = "relay_bandwidths.csv"
 WINDOW_DAYS = 7
+MIN_PRESENCE_FRAC = 0.80  # keep relays present on at least this fraction of days
 
-# === CHECK FOR OUTPUT FOLDER ARGUMENT ===
-FOLDER = None
-if len(sys.argv) > 1:
-    FOLDER = sys.argv[1]
+# === PARSE ARGUMENTS ===
+if len(sys.argv) < 2:
+    print("Usage: python3 relay_graphs.py <csv_path> [output_folder]")
+    print("  csv_path      : path to relay bandwidth CSV")
+    print("  output_folder : (optional) folder to save graphs; displays interactively if omitted")
+    sys.exit(1)
+
+CSV_PATH = sys.argv[1]
+FOLDER = sys.argv[2] if len(sys.argv) > 2 else None
+
+if FOLDER:
     os.makedirs(FOLDER, exist_ok=True)
     print(f"📁 Output folder set to: {FOLDER}")
 else:
@@ -19,18 +26,37 @@ else:
 
 # === LOAD DATA ===
 df = pd.read_csv(CSV_PATH, parse_dates=["date"])
+
+# Derive hour from timestamp if present and hour column is missing
+if "hour" not in df.columns and "timestamp" in df.columns:
+    df["hour"] = pd.to_datetime(df["timestamp"]).dt.hour
+elif "hour" not in df.columns:
+    df["hour"] = 0
+
+# Normalize column name: collectors output 'advertised_bw', graphs expect 'relay_bandwidth'
+if "relay_bandwidth" not in df.columns and "advertised_bw" in df.columns:
+    df = df.rename(columns={"advertised_bw": "relay_bandwidth"})
+
 df = df.sort_values(by=["fingerprint", "date", "hour"])
 
 # === PREPARE DAILY BANDWIDTH ===
 daily_bw = df.groupby(["fingerprint", "date"])["relay_bandwidth"].mean().reset_index()
 
-# === IDENTIFY TOP RELAYS BASED ON FIRST DAY ===
-first_day = daily_bw["date"].min()
-first_day_bw = daily_bw[daily_bw["date"] == first_day]
-threshold_5 = first_day_bw["relay_bandwidth"].quantile(0.95)
-threshold_10 = first_day_bw["relay_bandwidth"].quantile(0.90)
-top5_relays = set(first_day_bw[first_day_bw["relay_bandwidth"] >= threshold_5]["fingerprint"])
-top10_relays = set(first_day_bw[first_day_bw["relay_bandwidth"] >= threshold_10]["fingerprint"])
+# === FILTER BY MINIMUM PRESENCE ===
+total_days = daily_bw["date"].nunique()
+min_days = int(np.ceil(MIN_PRESENCE_FRAC * total_days))
+days_present = daily_bw.groupby("fingerprint")["date"].nunique()
+relays_above_threshold = days_present[days_present >= min_days].index
+print(f"ℹ️  Presence filter: {len(relays_above_threshold)} / {days_present.shape[0]} relays present on ≥{MIN_PRESENCE_FRAC*100:.0f}% of {total_days} days (≥{min_days} days)")
+daily_bw = daily_bw[daily_bw["fingerprint"].isin(relays_above_threshold)]
+
+# === IDENTIFY TOP RELAYS BASED ON FULL-PERIOD MEDIAN ===
+median_bw = daily_bw.groupby("fingerprint")["relay_bandwidth"].median()
+threshold_5 = median_bw.quantile(0.95)
+threshold_10 = median_bw.quantile(0.90)
+top5_relays = set(median_bw[median_bw >= threshold_5].index)
+top10_relays = set(median_bw[median_bw >= threshold_10].index)
+print(f"ℹ️  Top relay thresholds — top 5%: ≥{threshold_5:.0f} kB/s, top 10%: ≥{threshold_10:.0f} kB/s (based on full-period median)")
 
 # === FUNCTION TO COMPUTE ROLLING STATS ===
 def compute_rolling_stats(df_subset):
@@ -49,12 +75,20 @@ def compute_rolling_stats(df_subset):
         stats_list.append(stats)
     return pd.concat(stats_list).reset_index(drop=True)
 
-# === FUNCTION TO AGGREGATE AND ADD IQR ===
+# === FUNCTION TO AGGREGATE AND ADD PERCENTILE BANDS (10th–90th) ===
+def _p10(x):
+    v = x.dropna().values
+    return np.nanpercentile(v, 10) if len(v) > 0 else np.nan
+
+def _p90(x):
+    v = x.dropna().values
+    return np.nanpercentile(v, 90) if len(v) > 0 else np.nan
+
 def aggregate_stats(all_stats):
     agg = all_stats.groupby("date").agg({
-        "median_bw": ["median", lambda x: np.percentile(x, 25), lambda x: np.percentile(x, 75)],
-        "std_bw": ["median", lambda x: np.percentile(x, 25), lambda x: np.percentile(x, 75)],
-        "cv_bw": ["median", lambda x: np.percentile(x, 25), lambda x: np.percentile(x, 75)],
+        "median_bw": ["median", _p10, _p90],
+        "std_bw":    ["median", _p10, _p90],
+        "cv_bw":     ["median", _p10, _p90],
     })
     agg.columns = ["_".join(col).strip() for col in agg.columns.values]
     agg = agg.reset_index()
@@ -66,11 +100,11 @@ def plot_graph(agg, stat, title, color, filename=None):
     plt.plot(agg["date"], agg[f"{stat}_median"], color=color, label=f"Median {stat.upper()} (7-day rolling)")
     plt.fill_between(
         agg["date"],
-        agg[f"{stat}_<lambda_0>"],
-        agg[f"{stat}_<lambda_1>"],
+        agg[f"{stat}__p10"],
+        agg[f"{stat}__p90"],
         color=color,
         alpha=0.2,
-        label="25th–75th percentile"
+        label="10th–90th percentile"
     )
     plt.title(title)
     plt.xlabel("Date (window end)")
