@@ -1,5 +1,4 @@
 requests
 pandas
 numpy
-xz
-
+matplotlib

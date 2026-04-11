@@ -7,7 +7,7 @@ import datetime as dt
 import sys
 import time
 import urllib.request
-import lzma 
+import lzma
 import re
 import tarfile
 import os
@@ -68,27 +68,24 @@ def fetch_from_month_tar(day: dt.date, hour: int, timeout=60):
                 return data.decode("utf-8", errors="replace")
 
     raise RuntimeError(
-        f"Consensus for {datestr} {hh}:00 not found in {month_url}. "
-        f"Tried patterns like {datestr}-{hh}-00-00[-00]-consensus[.xz|.bz2]."
+        f"Consensus for {datestr} {hh}:00 not found in {month_url}."
     )
 
 def fetch_consensus(day: dt.date, hours, timeout=60):
     last_err = None
     for hour in hours:
         try:
-            log(f"  ↳ Using month tar for {day.isoformat()} @ {hour:02d}:00")
+            log(f"  ↳ Trying {day.isoformat()} @ {hour:02d}:00")
             text = fetch_from_month_tar(day, hour, timeout=max(timeout, 60))
             log(f"    ✓ Selected hour {hour:02d} for {day.isoformat()}")
             return text, hour
         except Exception as e:
             last_err = e
-            log(f"    ✗ Not in tar for hour {hour:02d}: {e}")
+            log(f"    ✗ Not found for hour {hour:02d}: {e}")
             continue
     raise RuntimeError(f"Failed to fetch consensus for {day.isoformat()}: {last_err}")
 
 def b64_to_hex(b64_id: str) -> str:
-    # Identity on 'r' line is base64 (20 bytes). Convert to UPPERCASE hex fingerprint.
-    # Base64 can be unpadded in consensus; add padding if necessary.
     padding = '=' * (-len(b64_id) % 4)
     raw = base64.b64decode(b64_id + padding)
     return raw.hex().upper()
@@ -107,7 +104,6 @@ def parse_consensus(consensus_text: str):
             continue
 
         if line.startswith("r "):
-            # r <nickname> <id> <digest> <pub1> <pub2> <ip> <orport> <dirport>
             parts = line.split()
             if len(parts) >= 3:
                 b64id = parts[2]
@@ -119,8 +115,6 @@ def parse_consensus(consensus_text: str):
                 current_fp = None
 
         elif current_fp and line.startswith("w "):
-            # w Bandwidth=NNNN [Measured=...] ...
-            # Pull the Bandwidth field
             try:
                 parts = line.split()
                 bw = None
@@ -133,11 +127,9 @@ def parse_consensus(consensus_text: str):
             except Exception:
                 pass
             finally:
-                # reset to avoid accidentally pairing the same 'w' with next relay
                 current_fp = None
 
         else:
-            # lines like 's', 'v', etc. ignore
             pass
 
     return results
@@ -145,39 +137,52 @@ def parse_consensus(consensus_text: str):
 def build_panel(start_date, end_date, hours):
     """
     Returns:
-      per_day: list of tuples (date, dict[fingerprint]=bandwidth)
-      common_relays: set of fingerprints present every day
+      per_day: list of tuples (date, used_hour, dict[fingerprint]=bandwidth)
+      common_relays: set of fingerprints present on every successfully fetched day
+      misses: number of days skipped due to missing consensus
     """
     per_day = []
-    for day in daterange(start_date, end_date):
+    misses = 0
+    all_days = list(daterange(start_date, end_date))
+    total = len(all_days)
+
+    for i, day in enumerate(all_days, 1):
         t0 = time.time()
-        log(f"[{day.isoformat()}] Fetching consensus (hours tried: {hours})...")
-        text, used_hour = fetch_consensus(day, hours)
+        log(f"[{day.isoformat()}] ({i}/{total}) Fetching consensus...")
+        try:
+            text, used_hour = fetch_consensus(day, hours)
+        except RuntimeError as e:
+            log(f"[{day.isoformat()}] WARN: skipping — {e}")
+            misses += 1
+            continue
         mapping = parse_consensus(text)
-        dt_s = time.time() - t0
-        log(f"[{day.isoformat()}] Parsed relays: {len(mapping):,} (in {dt_s:.1f}s)")
+        elapsed = time.time() - t0
+        log(f"[{day.isoformat()}] Parsed {len(mapping):,} relays in {elapsed:.1f}s")
         per_day.append((day, used_hour, mapping))
 
-    # Intersection of relays present all days
-    if not per_day:
-        return [], set()
+    if misses:
+        log(f"\nWARN: {misses} day(s) skipped due to missing consensus.")
 
+    if not per_day:
+        return [], set(), misses
+
+    # Intersection of relays present on every successfully fetched day
     common = set(per_day[0][2].keys())
     for _, _, m in per_day[1:]:
         common &= set(m.keys())
 
-
-    return per_day, common
+    return per_day, common, misses
 
 def write_csv(per_day, common_relays, out_path):
-    # CSV format: date,fingerprint,relay_bandwidth,timestamp
-    # timestamp = ISO string at selected hour (only know the consensus hour from the URL pattern).
     with open(out_path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["date", "hour", "fingerprint", "relay_bandwidth", "timestamp"])
         for day, used_hour, mapping in per_day:
-            stamp = dt.datetime.combine(day, dt.time(used_hour, 0, 0)).isoformat()
-            for fp in common_relays:
+            # Timestamp written as UTC ISO 8601
+            stamp = dt.datetime.combine(
+                day, dt.time(used_hour, 0, 0), tzinfo=dt.timezone.utc
+            ).isoformat()
+            for fp in sorted(common_relays):
                 bw = mapping.get(fp)
                 if bw is not None:
                     w.writerow([day.isoformat(), used_hour, fp, bw, stamp])
@@ -186,37 +191,64 @@ def write_csv(per_day, common_relays, out_path):
 def parse_args():
     p = argparse.ArgumentParser(description="Build daily advertised bandwidth panel from Tor consensuses.")
     p.add_argument("--start", required=True, help="Start date (YYYY-MM-DD)")
-    p.add_argument("--end", required=True, help="End date (YYYY-MM-DD)")
-    p.add_argument("--hour", type=int, default=0, help="Preferred hour (0-23)")
-    p.add_argument("--hour-fallback", type=int, action="append", default=[],
-                   help="Fallback hour(s), can be repeated (e.g., --hour-fallback 2 --hour-fallback 4)")
+    p.add_argument("--end",   required=True, help="End date (YYYY-MM-DD)")
+    p.add_argument("--hour", type=int, default=0,
+                   help="Target UTC hour to pull each day (0-23). Default: 0 (midnight).")
+    p.add_argument("--hour-fallback", type=int, default=2,
+                   help="Search ±N hours if exact hour is missing from archive. Default: 2.")
     p.add_argument("--out", default="daily_bw.csv", help="Output CSV path")
     return p.parse_args()
 
 def main():
     args = parse_args()
-    log(f"Starting pull: {args.start} → {args.end} @ hour {args.hour} (fallbacks: {args.hour_fallback})")
-    start = dt.datetime.strptime(args.start, "%Y-%m-%d").date()
-    end = dt.datetime.strptime(args.end, "%Y-%m-%d").date()
-    hours = [args.hour] + args.hour_fallback
 
-    # sanity
-    for h in hours:
-        if h < 0 or h > 23:
-            print(f"Invalid hour: {h}", file=sys.stderr)
-            return 2
+    try:
+        start = dt.datetime.strptime(args.start, "%Y-%m-%d").date()
+        end   = dt.datetime.strptime(args.end,   "%Y-%m-%d").date()
+    except ValueError as e:
+        print(f"Invalid date: {e}", file=sys.stderr)
+        return 2
 
-    per_day, common = build_panel(start, end, hours)
+    if start > end:
+        print("--start is after --end.", file=sys.stderr)
+        return 2
+
+    if not (0 <= args.hour <= 23):
+        print("--hour must be 0..23.", file=sys.stderr)
+        return 2
+
+    if not (0 <= args.hour_fallback <= 12):
+        print("--hour-fallback must be 0..12.", file=sys.stderr)
+        return 2
+
+    # Build ordered list of hours to try: exact first, then ±1, ±2, ... ±fallback
+    hours = [args.hour] + [
+        h for n in range(1, args.hour_fallback + 1)
+        for h in (args.hour + n, args.hour - n)
+        if 0 <= h < 24
+    ]
+
+    log(f"Starting pull: {start} → {end} @ hour {args.hour:02d}:00 UTC (fallback ±{args.hour_fallback}h)")
+    log(f"Hours to try per day: {hours}")
+
+    per_day, common, misses = build_panel(start, end, hours)
+
     if not per_day:
-        print("No days fetched; nothing to write.", file=sys.stderr)
+        print("ERROR: no days fetched. Check your date range.", file=sys.stderr)
         return 1
 
     if not common:
-        print("Warning: no relays present on all days in the range. CSV will be empty.", file=sys.stderr)
+        print(
+            f"ERROR: strict intersection produced 0 common relays across {len(per_day)} day(s). "
+            "No relay was present on every day. Try a shorter date range.",
+            file=sys.stderr
+        )
+        return 1
 
-    log(f"Writing CSV to {args.out} (days={len(per_day)}, common_relays={len(common):,})")
+    log(f"\nWriting CSV: {len(per_day)} day(s), {len(common):,} common relays → {args.out}")
     write_csv(per_day, common, args.out)
-    print(f"Wrote panel for {len(per_day)} day(s), common relays: {len(common)} → {args.out}")
+
+    print(f"Wrote {len(per_day) * len(common):,} rows | {len(per_day)} days | {len(common):,} relays | {misses} day(s) skipped → {args.out}")
     return 0
 
 if __name__ == "__main__":

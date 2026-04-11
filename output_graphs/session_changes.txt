@@ -3,187 +3,280 @@ tor-relay-data | Branch: concerns
 Date: 2026-04-10
 ================================================================================
 
-OVERVIEW
---------
-This session addressed several bugs and analytical issues in the existing
-codebase, fixed a broken data collection pipeline, pulled a fresh year of
-relay data, and produced a full set of analysis graphs. Changes are listed
-in the order they were made.
+PRIMARY PIPELINE
+----------------
+  pull_relay_data.py   — data collection (with caching)
+  validate_data.py     — data validation
+  relay_graphs.py      — analysis and graphing
 
 
---------------------------------------------------------------------------------
-1. CREATED BRANCH: concerns
---------------------------------------------------------------------------------
-All changes in this session were made on a new branch called "concerns" to keep
-them isolated from main until testing and review are complete.
+================================================================================
+pull_relay_data.py
+================================================================================
 
-
---------------------------------------------------------------------------------
-2. FIXED: Column name mismatch in relay_graphs.py
---------------------------------------------------------------------------------
+CHANGE 1 — CRITICAL: Missing day no longer crashes the entire run
+-----------------------------------------------------------------
 Problem:
-  relay_graphs.py expected a column called "relay_bandwidth" and also sorted
-  by a column called "hour". Neither of these columns are produced by the data
-  collection scripts, which output "advertised_bw" and no hour column. This
-  caused the script to crash silently or produce wrong results on any raw CSV
-  from the collector.
+  fetch_consensus() raised a RuntimeError if it could not find a consensus
+  for any given day. This exception was never caught in build_panel(), so it
+  propagated up and killed the entire script. On a year-long pull, a single
+  missing day (which happens normally due to archive lag on recent dates)
+  would crash the run with no output and no way to resume.
 
 Fix:
-  Added normalization logic at load time:
-    - If "relay_bandwidth" is missing but "advertised_bw" is present, rename it.
-    - If "hour" is missing but "timestamp" is present, derive hour from timestamp.
-    - If neither timestamp nor hour is present, default hour to 0.
+  Wrapped the fetch_consensus() call in build_panel() in a try/except block.
+  If a day fails, a warning is logged and the day is skipped. The run
+  continues. Missing day count is tracked and reported in the final summary.
 
-  This makes relay_graphs.py compatible with both raw collector output and any
-  previously processed CSVs regardless of column naming.
+  Before:
+    text, used_hour = fetch_consensus(day, hours)
+
+  After:
+    try:
+        text, used_hour = fetch_consensus(day, hours)
+    except RuntimeError as e:
+        log(f"[{day.isoformat()}] WARN: skipping — {e}")
+        misses += 1
+        continue
 
 
---------------------------------------------------------------------------------
-3. FIXED: Top relay classification used only day 1
---------------------------------------------------------------------------------
+CHANGE 2 — SIGNIFICANT: Hour fallback interface overhauled
+----------------------------------------------------------
 Problem:
-  relay_graphs.py identified "top 5%" and "top 10%" relays by their bandwidth
-  on the very first day of the dataset. A relay that happened to be high on
-  day 1 but mediocre for the rest of the year would be permanently classified
-  as a top relay, and vice versa.
+  --hour-fallback used action="append", requiring each fallback hour to be
+  listed individually. The README worked around this with a shell loop passing
+  all 23 remaining hours — effectively trying every hour of the day, which
+  is not a meaningful fallback strategy. The interface was confusing and easy
+  to misuse.
 
 Fix:
-  Top relay thresholds are now computed using each relay's median bandwidth
-  across the entire dataset. This is a more stable and representative measure
-  of a relay's true capacity tier.
+  --hour-fallback now takes a single integer N meaning "search ±N hours from
+  the target hour". Internally the script generates the ordered list:
+  [target, +1, -1, +2, -2, ...] up to ±N. Default is 2, matching the
+  behavior of dump_consensus_panel.py.
+
+  Before:
+    --hour 0 $(for h in $(seq 1 23); do echo --hour-fallback $h; done)
+
+  After:
+    --hour 0 --hour-fallback 2
 
 
---------------------------------------------------------------------------------
-4. ADDED: Minimum presence filter (80% threshold)
---------------------------------------------------------------------------------
+CHANGE 3 — SIGNIFICANT: Empty output is now a hard error
+---------------------------------------------------------
 Problem:
-  Previously the codebase used --require-all-days in data-check.py, which
-  drops any relay that is missing even a single day. Over a year with 365 days,
-  this introduces severe survivorship bias — only perfectly consistent relays
-  survive, which is not representative of the network as a whole.
+  If the strict intersection across all fetched days produced zero common
+  relays, the script printed a single warning line and wrote an empty CSV.
+  The warning was easy to miss in a long run log and the empty file could
+  be mistaken for valid output.
 
 Fix:
-  Added MIN_PRESENCE_FRAC = 0.80 to relay_graphs.py. Relays must appear on
-  at least 80% of days in the dataset to be included. At 358 days, this
-  requires a relay to appear on at least 287 days. This retains relays that
-  had brief outages without keeping relays that are essentially transient.
+  If common relay intersection is empty, the script now exits immediately
+  with a clear error message and a non-zero exit code. No file is written.
 
-  The threshold is relative (80% of whatever days are in the dataset), so it
-  scales automatically when different date ranges are used.
+  Error message:
+    "ERROR: strict intersection produced 0 common relays across N day(s).
+     No relay was present on every day. Try a shorter date range."
 
 
---------------------------------------------------------------------------------
-5. FIXED: Percentile bands widened and made safe
---------------------------------------------------------------------------------
+CHANGE 4 — MINOR: Timestamps are now explicitly UTC
+----------------------------------------------------
+Problem:
+  Timestamps were written as timezone-naive ISO strings (e.g.
+  "2025-04-01T00:00:00"). Consensus data is UTC but nothing in the output
+  said so. This matters for research reproducibility.
+
+Fix:
+  Timestamps are now written with an explicit UTC offset:
+  "2025-04-01T00:00:00+00:00"
+
+  Before:
+    stamp = dt.datetime.combine(day, dt.time(used_hour, 0, 0)).isoformat()
+
+  After:
+    stamp = dt.datetime.combine(
+        day, dt.time(used_hour, 0, 0), tzinfo=dt.timezone.utc
+    ).isoformat()
+
+
+CHANGE 5 — MINOR: Progress indicator added
+-------------------------------------------
+Problem:
+  The script logged each day as it processed but gave no indication of how
+  many days remained. On a year-long pull this made it hard to estimate
+  completion.
+
+Fix:
+  Each day's log line now shows (current/total):
+    [2025-04-10] (1/365) Fetching consensus...
+
+
+================================================================================
+validate_data.py
+================================================================================
+
+CHANGE 1 — SIGNIFICANT: Missing days now configurable, not always fatal
+-----------------------------------------------------------------------
+Problem:
+  Any gap in the date range caused an immediate hard failure. This made the
+  validator incompatible with pull_relay_data.py after the crash fix above
+  (which skips missing days gracefully). A year-long pull with 7 missing
+  recent dates would always fail validation.
+
+Fix:
+  Added --max-missing-days N flag. If the number of missing days is within
+  the allowed limit, they are reported as notes rather than errors. Default
+  is 0 (strict, no gaps) to preserve existing behavior.
+
+  Example for research use (allowing up to 10 missing days):
+    python3 validate_data.py daily_bw.csv --max-missing-days 10
+
+
+CHANGE 2 — SIGNIFICANT: Now accepts both collector output formats
+-----------------------------------------------------------------
+Problem:
+  validate_data.py required a column named "relay_bandwidth" and would fail
+  on CSVs from dump_consensus_panel.py which outputs "advertised_bw". The
+  two scripts in the pipeline were incompatible at the validation step.
+
+Fix:
+  If "relay_bandwidth" is not present but "advertised_bw" is, the column is
+  renamed automatically before validation proceeds. Both formats pass.
+
+
+CHANGE 3 — SIGNIFICANT: Strict panel check is now opt-in
+---------------------------------------------------------
+Problem:
+  The validator always required an identical relay set on every day. This is
+  correct for pull_relay_data.py output (which does strict intersection) but
+  always fails for dump_consensus_panel.py output (which does not). This
+  made the validator unusable with any dataset that wasn't from the primary
+  pipeline.
+
+Fix:
+  Added --strict-panel flag. Without it, varying per-day relay counts are
+  reported as a note. With --strict-panel, varying counts are a hard error.
+
+  For primary pipeline (pull_relay_data.py):
+    python3 validate_data.py daily_bw.csv --strict-panel
+
+  For exploratory data (dump_consensus_panel.py):
+    python3 validate_data.py daily_bw.csv --max-missing-days 10
+
+
+CHANGE 4 — MINOR: SHA256 now computed via streaming
+----------------------------------------------------
+Problem:
+  The SHA256 digest was computed by reading the entire file into memory at
+  once. For large CSVs this is slow and memory-inefficient.
+
+Fix:
+  File is now read in 64KB chunks and fed to the hasher incrementally.
+  Output digest is identical; memory usage is constant regardless of file
+  size.
+
+
+================================================================================
+relay_graphs.py
+================================================================================
+
+CHANGE 1 — CRITICAL: Column name mismatch fixed
+------------------------------------------------
+Problem:
+  relay_graphs.py expected a column called "relay_bandwidth" and sorted by
+  a column called "hour". Neither is produced by dump_consensus_panel.py,
+  which outputs "advertised_bw" and no hour column. The script would crash
+  or produce wrong results on any raw collector CSV.
+
+Fix:
+  Added normalization at load time:
+  - If "relay_bandwidth" is missing but "advertised_bw" exists, rename it.
+  - If "hour" is missing but "timestamp" exists, derive hour from timestamp.
+  - If neither is present, default hour to 0.
+  The script now works correctly with output from both collectors.
+
+
+CHANGE 2 — SIGNIFICANT: Top relay classification uses full-period median
+------------------------------------------------------------------------
+Problem:
+  Top 5% and top 10% relay groups were determined by bandwidth on the first
+  day of the dataset only. A relay with an unusually high or low value on
+  day 1 would be permanently misclassified.
+
+Fix:
+  Each relay is now ranked by its median bandwidth across the entire dataset.
+  This is a stable, representative measure of a relay's true capacity tier.
+
+
+CHANGE 3 — SIGNIFICANT: Presence filter replaces strict all-days requirement
+----------------------------------------------------------------------------
+Problem:
+  The original approach (via --require-all-days in data-check.py) dropped
+  any relay missing even a single day, introducing severe survivorship bias
+  over a year-long dataset.
+
+Fix:
+  Added MIN_PRESENCE_FRAC = 0.80 in relay_graphs.py. Relays must appear on
+  at least 80% of days to be included. The threshold is relative so it
+  scales automatically to any date range. Note: when using pull_relay_data.py
+  (strict intersection), all relays already pass this filter — it becomes a
+  safety net rather than the primary filter.
+
+
+CHANGE 4 — SIGNIFICANT: Percentile bands widened and made crash-safe
+---------------------------------------------------------------------
 Problem (analytical):
-  The shaded band on each graph showed the 25th–75th percentile (IQR). This
-  is a relatively narrow window that understates how spread out relay behavior
-  actually is.
-
-Fix:
-  Changed to 10th–90th percentile bands, which give a better picture of the
-  full range of relay behavior.
+  Graphs showed 25th–75th percentile bands, understating the spread of
+  relay behavior.
 
 Problem (technical):
-  The original aggregate_stats() function used anonymous lambda functions
-  inside groupby().agg(), which caused two issues:
-    a) Column names were generated as "<lambda_0>" and "<lambda_1>", which
-       are fragile and broke in newer pandas versions.
-    b) The lambdas called np.percentile() on arrays that could be all-NaN
-       (during the first 6 days before the 7-day rolling window fills),
-       causing an IndexError crash.
+  Lambda functions inside groupby().agg() produced unstable column names
+  ("<lambda_0>", "<lambda_1>") that broke in newer pandas, and called
+  np.percentile() on all-NaN arrays (first 6 days before the 7-day window
+  fills), causing an IndexError crash.
 
 Fix:
-  Replaced lambdas with named helper functions _p10() and _p90() that use
-  np.nanpercentile() and guard against empty arrays. Column names in the
-  aggregated DataFrame are now stable and predictable (_p10, _p90).
-  Updated plot_graph() to reference the new column names.
+  - Bands widened to 10th–90th percentile.
+  - Replaced lambdas with named helper functions _p10() and _p90() that use
+    np.nanpercentile() and guard against empty arrays.
+  - Column names are now stable: _p10, _p90.
 
 
---------------------------------------------------------------------------------
-6. ADDED: CSV path as command-line argument to relay_graphs.py
---------------------------------------------------------------------------------
+CHANGE 5 — SIGNIFICANT: CSV path is now a command-line argument
+---------------------------------------------------------------
 Problem:
-  relay_graphs.py had CSV_PATH hardcoded at the top of the file. To use a
-  different dataset you had to edit the source file every time, which is error
-  prone and messy.
+  CSV_PATH was hardcoded at the top of the file. Every time a new dataset
+  was used, the source file had to be edited manually.
 
 Fix:
-  The script now takes the CSV path as the first positional argument:
+  CSV path is now the first positional argument. Output folder remains
+  optional (interactive display if omitted).
 
+  Usage:
     python3 relay_graphs.py <csv_path> [output_folder]
 
-  The output folder remains optional (graphs display interactively if omitted).
-  A usage message is printed if no arguments are provided.
-
-
---------------------------------------------------------------------------------
-7. FIXED: dump_consensus_panel.py wrote 0 rows (wrong member path format)
---------------------------------------------------------------------------------
-Problem:
-  Running dump_consensus_panel.py produced "Wrote 0 rows across 0 day(s)".
-  The script downloads monthly tarballs from CollecTor and then looks for
-  consensus files inside them. The script assumed member names like:
-
-    2025-04-13-00-00-00-consensus
-
-  But the actual structure inside the tarballs is:
-
-    consensuses-2025-04/13/2025-04-13-02-00-00-consensus
-
-  So every lookup failed silently, no data was extracted, and nothing was
-  written to the output CSV.
-
-Fix:
-  Updated two locations in dump_consensus_panel.py:
-
-  1. list_members_for_day() — used when iterating all hours:
-     Old: prefix = f"{day:%Y-%m-%d}-"
-     New: prefix = f"consensuses-{day:%Y-%m}/{day.day:02d}/{day:%Y-%m-%d}-"
-
-  2. name_for() inside iter_consensuses_fixed_hour() — used when looking up
-     a specific hour:
-     Old: f"{d:%Y-%m-%d}-{h:02d}-00-00-consensus"
-     New: f"consensuses-{d:%Y-%m}/{d.day:02d}/{d:%Y-%m-%d}-{h:02d}-00-00-consensus"
-
-  After this fix, a test run over 3 days (2025-04-01 to 2025-04-03) produced
-  27,300 rows as expected.
-
-
---------------------------------------------------------------------------------
-8. PULLED FRESH DATA
---------------------------------------------------------------------------------
-After fixing the collector, a full year of relay data was pulled:
-
-  Date range : 2025-04-10 to 2026-04-09
-  Mode       : fixed-hour, hour 0 UTC, fallback ±2 hours
-  Output     : data/4.10.25-4.9.26/1yr_daily_bw.csv
-  Rows       : 3,278,039
-  Days       : 358 (7 days missing due to CollecTor archive lag on recent dates)
-
-
---------------------------------------------------------------------------------
-9. UPDATED README.md
---------------------------------------------------------------------------------
-The previous README referenced scripts that no longer exist (pull_relay_data.py,
-validate_data.py) and was missing documentation for relay_graphs.py entirely.
-
-The new README covers:
-  - Project purpose and goals
-  - Full project structure
-  - Environment setup
-  - Complete workflow: collect → validate → graph
-  - All flags for all three scripts with descriptions
-  - What to look for in validation output
-  - All 9 output graphs explained
-  - How to interpret CV values and graph patterns
-  - Data source explanation
-
 
 ================================================================================
-FILES CHANGED
+RECOMMENDED COMMANDS — FULL PIPELINE
 ================================================================================
-  relay_graphs.py                        — fixes 2, 3, 4, 5, 6
-  Archive/code/dump_consensus_panel.py   — fix 7
-  README.md                              — rewritten (change 9)
+
+1. Collect one year of data:
+   python3 pull_relay_data.py \
+     --start 2025-04-10 \
+     --end 2026-04-09 \
+     --hour 0 \
+     --hour-fallback 2 \
+     --out data/4.10.25-4.9.26/1yr_daily_bw.csv
+
+2. Validate:
+   python3 validate_data.py \
+     data/4.10.25-4.9.26/1yr_daily_bw.csv \
+     --strict-panel \
+     --max-missing-days 10
+
+3. Generate graphs:
+   python3 relay_graphs.py \
+     data/4.10.25-4.9.26/1yr_daily_bw.csv \
+     output_graphs/
+
 ================================================================================

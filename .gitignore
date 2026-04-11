@@ -1,5 +1,14 @@
-daily_bw_1year.csv.zip
-data/9.1.24-8.31.25/1yr_9.1.24_8.31.25_daily_bw.csv
-daily_bw.csv
-/Archive/
-.cache
+venv/
+.cache/
+__pycache__/
+*.pyc
+
+# Generated output — tracked intentionally for research record-keeping
+# output_graphs/
+
+# Large data files — use git-lfs or keep locally only
+data/**/*.csv
+data/**/*.csv.zip
+
+# Logs
+*.log
