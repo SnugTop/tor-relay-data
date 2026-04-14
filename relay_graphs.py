@@ -63,7 +63,7 @@ def compute_rolling_stats(df_subset):
     stats_list = []
     for fp, group in df_subset.groupby("fingerprint"):
         group = group.sort_values("date").set_index("date")
-        rolling = group["relay_bandwidth"].rolling(f"{WINDOW_DAYS}D", min_periods=WINDOW_DAYS)
+        rolling = group["relay_bandwidth"].rolling(f"{WINDOW_DAYS}D", min_periods=max(WINDOW_DAYS - 2, 1))
         stats = pd.DataFrame({
             "fingerprint": fp,
             "date": group.index,
