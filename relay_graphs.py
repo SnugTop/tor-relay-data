@@ -20,9 +20,9 @@ FOLDER = sys.argv[2] if len(sys.argv) > 2 else None
 
 if FOLDER:
     os.makedirs(FOLDER, exist_ok=True)
-    print(f"📁 Output folder set to: {FOLDER}")
+    print(f"Output folder set to: {FOLDER}")
 else:
-    print("⚙️  No folder specified — graphs will be displayed interactively instead of saved.")
+    print("No folder specified — graphs will be displayed interactively instead of saved.")
 
 # === LOAD DATA ===
 df = pd.read_csv(CSV_PATH, parse_dates=["date"])
@@ -47,7 +47,7 @@ total_days = daily_bw["date"].nunique()
 min_days = int(np.ceil(MIN_PRESENCE_FRAC * total_days))
 days_present = daily_bw.groupby("fingerprint")["date"].nunique()
 relays_above_threshold = days_present[days_present >= min_days].index
-print(f"ℹ️  Presence filter: {len(relays_above_threshold)} / {days_present.shape[0]} relays present on ≥{MIN_PRESENCE_FRAC*100:.0f}% of {total_days} days (≥{min_days} days)")
+print(f"Presence filter: {len(relays_above_threshold)} / {days_present.shape[0]} relays present on ≥{MIN_PRESENCE_FRAC*100:.0f}% of {total_days} days (≥{min_days} days)")
 daily_bw = daily_bw[daily_bw["fingerprint"].isin(relays_above_threshold)]
 
 # === IDENTIFY TOP RELAYS BASED ON FULL-PERIOD MEDIAN ===
@@ -56,14 +56,14 @@ threshold_5 = median_bw.quantile(0.95)
 threshold_10 = median_bw.quantile(0.90)
 top5_relays = set(median_bw[median_bw >= threshold_5].index)
 top10_relays = set(median_bw[median_bw >= threshold_10].index)
-print(f"ℹ️  Top relay thresholds — top 5%: ≥{threshold_5:.0f} kB/s, top 10%: ≥{threshold_10:.0f} kB/s (based on full-period median)")
+print(f"Top relay thresholds — top 5%: ≥{threshold_5:.0f} kB/s, top 10%: ≥{threshold_10:.0f} kB/s (based on full-period median)")
 
 # === FUNCTION TO COMPUTE ROLLING STATS ===
 def compute_rolling_stats(df_subset):
     stats_list = []
     for fp, group in df_subset.groupby("fingerprint"):
         group = group.sort_values("date").set_index("date")
-        rolling = group["relay_bandwidth"].rolling(f"{WINDOW_DAYS}D", min_periods=WINDOW_DAYS)
+        rolling = group["relay_bandwidth"].rolling(f"{WINDOW_DAYS}D", min_periods=max(WINDOW_DAYS - 2, 1))
         stats = pd.DataFrame({
             "fingerprint": fp,
             "date": group.index,
@@ -117,13 +117,13 @@ def plot_graph(agg, stat, title, color, filename=None):
         save_path = os.path.join(FOLDER, f"{filename}.png")
         plt.savefig(save_path, dpi=300)
         plt.close()
-        print(f"💾 Saved {save_path}")
+        print(f"Saved {save_path}")
     else:
         plt.show()
 
 # === ANALYSIS PIPELINE ===
 def process_and_plot(label, df_subset, file_prefix):
-    print(f"🔹 Computing statistics for {label}...")
+    print(f"Computing statistics for {label}...")
     all_stats = compute_rolling_stats(df_subset)
     agg = aggregate_stats(all_stats)
 
@@ -141,6 +141,6 @@ top10_bw = daily_bw[daily_bw["fingerprint"].isin(top10_relays)]
 process_and_plot("Top 10% Relays", top10_bw, "top10")
 
 if FOLDER:
-    print(f"\n✅ All graphs saved in folder: {FOLDER}")
+    print(f"\n All graphs saved in folder: {FOLDER}")
 else:
-    print("\n✅ All graphs displayed interactively.")
+    print("\n All graphs displayed interactively.")
